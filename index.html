@@ -49,14 +49,89 @@
 			position: relative;
 		}
 
-		@media only screen and (max-width: 480px){
+		.text-lang{
+			font-family: calibri;
+			font-size: 1.5vw;
+			color: white;
+			text-align: center;
+			width: 100%;
+			position: relative;
+			top: 3vw;
+		}
 
+		.line{
+			background-image: url('Data/Imgs/Line.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+			width: 70%;
+			left: 4.2vw;
+			height: 1px;
+		}
+
+		#line1{
+			top: 6vw;
+		}
+
+		#line2{
+			top: 9vw;
+		}
+
+		#line3{
+			top: 11vw;
+		}
+
+		#line4{
+			top: 14vw;
+		}
+
+		.button{
+			background-image: none;
+			font-family: calibri;
+			font-size: 1.3vw;
+			color: white;
+			width: 100%;
+			height: 2.4vw;
+			position: relative;
+			text-align: center;
+			padding-top: 0.6vw;
+			top: 0.1vw;
+		}
+
+		.button:hover{
+			background-image: url('Data/Imgs/Select-button.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			cursor: pointer;
+		}
+
+		.button:active{
+			background-image: url('Data/Imgs/Select-button.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			cursor: pointer;
+		}
+
+		@media only screen and (max-width: 480px){
+		
 		}
 	</style>
 </head>
 
 <body>
-	<div class='inop-logo'><div class='panel-lang'></div></div>
+	<div class='inop-logo'>
+		<div class='panel-lang'>
+			<div class='text-lang'>SELECT LANGUAGE</div>
+			<div id='line1' class='line'>
+				<div class='button'>ENGLISH</div>
+			</div>
+			<div id='line2' class='line'></div>
+			<div id='line3' class='line'>
+				<div class='button'>SPANISH</div>
+			</div>
+			<div id='line4' class='line'></div>
+		</div>
+	</div>
 
 
 </body>

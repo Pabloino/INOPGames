@@ -27,30 +27,37 @@
 			background-color:#5B606A;
 		}
 
-		.langs {
-			left: 0px;
-			top: 0px;
-			margin: 0px;
-			width: 100%;
-			height: 60%;
-			position: absolute;
-		}
-
      		.inop-logo{
 			background-image: url('Data/Imgs/Logo_index.png');
 			background-repeat: no-repeat;
-			background-size: 100% auto;
-			height: auto;
-			border: 2px solid yellow;
+			background-size: 100% 100%;
+			width: 10vw;
+			height: 12vw;
+			top: 14vw;
+			left: 28%;
 			position: relative;
+		}
+
+		.panel-lang{
+			background-image: url('Data/Imgs/Lang_back.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			width: 29vw;
+			height: 20vw;
+			bottom: 32%;
+			left: 130%;
+			position: relative;
+		}
+
+		@media only screen and (max-width: 480px){
+
 		}
 	</style>
 </head>
 
 <body>
-  <div class='langs'>
-	<div class='inop-logo'></div>
-  </div>
+	<div class='inop-logo'><div class='panel-lang'></div></div>
+
 
 </body>
 

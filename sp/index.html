@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+	<title>INOPGames</title>
+
+	<!-- Chrome, Safari, IE -->
+	<link href='Data/Imgs/Logo_ico16.png' rel='shortcut icon' sizes='16x16'/>
+	<link href='Data/Imgs/Logo_ico32.png' rel='shortcut icon' sizes='32x32'/>
+	<link href='Data/Imgs/Logo_ico48.png' rel='shortcut icon' sizes='48x48'/>
+	<link href='Data/Imgs/Logo_ico64.png' rel='shortcut icon' sizes='64x64'/>
+	<link href='Data/Imgs/Logo_ico128.png' rel='shortcut icon' sizes='128x128'/>
+
+	<!-- Firefox, Opera  -->
+	<link href='Data/Imgs/Logo_ico16.png' rel='icon' sizes='16x16'/>
+	<link href='Data/Imgs/Logo_ico32.png' rel='icon' sizes='32x32'/>
+	<link href='Data/Imgs/Logo_ico48.png' rel='icon' sizes='48x48'/>
+	<link href='Data/Imgs/Logo_ico64.png' rel='icon' sizes='64x64'/>
+	<link href='Data/Imgs/Logo_ico128.png' rel='icon' sizes='128x128'/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<style>
+		body {
+			background-color:#5B606A;
+		}
+
+      		.main{
+			background-color:#252932;
+			min-width: 100%;
+			height: 106px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+     		.inop-logo{
+			background-image: url('../Data/Imgs/Logo_index_page.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			position:absolute;
+			width: 98px;
+			height: 120px;
+			left: 6%;
+			top: 15px;
+			z-index: 2;
+		}
+
+  	    	.home-button{
+			position:absolute;
+			text-align: center;
+			font-weight: bold;
+			font-size:20px;
+			top: 56px;
+			right: 460px;
+			height: 20px;
+			width: 120px;
+			padding-top: 14px; 
+			padding-bottom: 14px;
+		}
+
+		.home-button:hover{
+			background-image: url('../Data/Imgs/Menu-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+
+		.home-button:active{
+			background-image: url('../Data/Imgs/Menu-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+
+		.games-button{
+			position:absolute;
+			text-align: center;
+			font-weight: bold;
+			font-size:20px;
+			top: 56px;
+			right: 330px;
+			height: 20px;
+			width: 120px;
+			padding-top: 14px; 
+			padding-bottom: 14px; 
+		}
+
+		.games-button:hover{
+			background-image: url('../Data/Imgs/Menu-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+
+		.games-button:active{
+			background-image: url('../Data/Imgs/Menu-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+
+		.about-button{
+			position:absolute;
+			text-align: center;
+			font-weight: bold;
+			font-size:20px;
+			top: 56px;
+			right: 200px;
+			height: 20px;
+			width: 120px;
+			padding-top: 14px; 
+			padding-bottom: 14px; 
+		}
+
+		.about-button:hover{
+			background-image: url('../Data/Imgs/Menu-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+
+		.about-button:active{
+			background-image: url('../Data/Imgs/Menu-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+
+		.lang-button{
+			background-image: url('../Data/Imgs/En-button.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			position:absolute;
+			text-align: center;
+			font-weight: bold;
+			font-size:20px;
+			top: 66px;
+			right: 100px;
+			height: 30px;
+			width: 30px;
+		}
+
+		.lang-button:hover{
+			background-image: url('../Data/Imgs/En-button-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+
+		.lang-button:active{
+			background-image: url('../Data/Imgs/En-button-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+
+
+		.mySlides {display: none;}
+      		img {vertical-align: middle;}
+
+      		/* Slideshow container */
+      		.slideshow-container {
+        		width: 100%;
+        		position: absolute;
+			top: 106px;
+      		}
+
+     		.box-container{
+			width: 100%;
+        		position: relative;
+			top: 0px;
+		}
+
+		/* Xmax Deliveries */
+      		.button-xmas{
+			position: absolute;
+			background-color: #307240;
+			color: #FFFFFF;
+			width: 10%;
+			font-family: calibri;
+			font-size: 1.5vw;
+			text-align: center;
+			top: 78%;
+			right: 6%;
+			border: 5px solid #307240;
+		}
+
+		.button-xmas:hover{
+			background-color: #0E875C;
+			border: 5px solid #0E875C;
+			cursor: pointer;
+		}
+
+		.button-xmas:active{
+			background-color: #0E875C;
+			border: 5px solid #0E875C;
+			cursor: pointer;
+		}
+
+      		.text-xmas{
+        		color: #f2f2f2;
+        		font-size: 1.3vw;
+			font-family: calibri;
+        		position: absolute;
+			right: 6%;
+        		top: 60%;
+        		width: 28%;
+        		text-align: left;
+      		}
+
+     		.backbox-xmas{
+			background-color: #00163E;
+			opacity: 0.5;
+    			filter: alpha(opacity=50); /* For IE8 and earlier */
+			position: absolute;
+			top: 56%;
+			right: 4%;
+			width: 32%;
+			height: 26%;
+		}
+
+		/* Bloxes */
+      		.button-bloxes{
+			position: absolute;
+			background-color: #0D76B7;
+			color: #FFFFFF;
+			width: 10%;
+			font-family: calibri;
+			font-size: 1.5vw;
+			text-align: center;
+			top: 82%;
+			right: 25%;
+			border: 5px solid #0D76B7;
+		}
+
+		.button-bloxes:hover{
+			background-color: #0091C4;
+			border: 5px solid #0091C4;
+			cursor: pointer;
+		}
+
+		.button-bloxes:active{
+			background-color: #0091C4;
+			border: 5px solid #0091C4;
+			cursor: pointer;
+		}
+
+      		.text-bloxes{
+        		color: #f2f2f2;
+        		font-size: 1.3vw;
+			font-family: calibri;
+        		position: absolute;
+			right: 6%;
+        		top: 64%;
+        		width: 30%;
+        		text-align: left;
+      		}
+
+     		.backbox-bloxes{
+			background-color: #00163E;
+			opacity: 0.6;
+    			filter: alpha(opacity=60); /* For IE8 and earlier */
+			position: absolute;
+			top: 60%;
+			right: 4%;
+			width: 34%;
+			height: 26%;
+		}
+
+		/* Dball */
+      		.button-db{
+			position: absolute;
+			background-color: #0D76B7;
+			color: #FFFFFF;
+			width: 10%;
+			font-family: calibri;
+			font-size: 1.5vw;
+			text-align: center;
+			top: 78%;
+			right: 9%;
+			border: 5px solid #0D76B7;
+		}
+
+		.button-db:hover{
+			background-color: #0091C4;
+			border: 5px solid #0091C4;
+			cursor: pointer;
+		}
+
+		.button-db:active{
+			background-color: #0091C4;
+			border: 5px solid #0091C4;
+			cursor: pointer;
+		}
+
+      		.text-db{
+        		color: #f2f2f2;
+        		font-size: 1.3vw;
+			font-family: calibri;
+        		position: absolute;
+			right: 10.5%;
+        		top: 60%;
+        		width: 30%;
+        		text-align: left;
+      		}
+
+     		.backbox-db{
+			background-color: #00163E;
+			opacity: 0.6;
+    			filter: alpha(opacity=60); /* For IE8 and earlier */
+			position: absolute;
+			top: 55%;
+			right: 7%;
+			width: 36%;
+			height: 26%;
+		}
+
+      		/* The dots/bullets/indicators */
+		.dots {
+			position:absolute;
+			top: 92%;
+			right: 0%;
+			width: 10%;
+		}
+
+      		.dot {
+        		cursor: pointer;
+        		height: 1vw;
+        		width: 1vw;
+        		margin: 0 2px;
+        		background-color: #bbb;
+        		border-radius: 20%;
+        		display: inline-block;
+        		transition: background-color 0.6s ease;
+      		}
+
+      		.active {
+      	  		background-color: #717171;
+      		}
+
+      		.active, .dot:hover {
+        		background-color: #717171;
+      		}
+
+      		/* Fading animation */
+      		.fade {
+        		-webkit-animation-name: fade;
+        		-webkit-animation-duration: 1.5s;
+        		animation-name: fade;
+        		animation-duration: 1.5s;
+      		}
+
+      		@-webkit-keyframes fade {
+        		from {opacity: .4} 
+        		to {opacity: 1}
+      		}
+
+      		@keyframes fade {
+        		from {opacity: .4} 
+        		to {opacity: 1}
+      		}
+
+      		.news{
+			position:absolute;
+			background-color: #ECF0F8;
+			top: 100%;
+			font-family: calibri;
+			color: black;
+			font-size: 1.4vw;
+			width: 100%;
+			font-weight: bold;
+		}
+
+		.post-1{
+			position:relative;
+			font-family: calibri;
+			color: black;
+			font-size: 1.4vw;
+			width: 86%;;
+			padding: 1.4vw;
+			margin-left: 5vw;
+			margin-right: 5vw;
+			font-weight: normal;
+			border-top: 2px solid #8C97A3;
+			border-bottom: 2px solid #A5AEBC;
+		}
+
+		.post-2{
+			position:relative;
+			font-family: calibri;
+			color: black;
+			font-size: 1.4vw;
+			width: 86%;;
+			padding: 1.4vw;
+			margin-left: 5vw;
+			margin-right: 5vw;
+			font-weight: normal;
+			border-bottom: 2px solid #A5AEBC;
+		}
+
+		.post-3{
+			position:relative;
+			font-family: calibri;
+			color: black;
+			font-size: 1.4vw;
+			width: 86%;;
+			padding: 1.4vw;
+			margin-left: 5vw;
+			margin-right: 5vw;
+			font-weight: normal;
+			border-bottom: 2px solid #A5AEBC;
+		}
+
+		.news-button{
+			position:relative;
+			background-color: #0D76B7;
+			color: #FFFFFF;
+			width: 34%;
+			font-family: calibri;
+			font-size: 1.5vw;
+			text-align: center;
+			margin-top: 1.5vw;
+			margin-bottom: 1.5vw;
+			margin-left: 32vw;
+			border: 1vw solid #0D76B7;
+		}
+
+		.news-button:hover{
+			background-color: #0091C4;
+			border: 1vw solid #0091C4;
+			cursor: pointer;
+		}
+
+		.news-button:active{
+			background-color: #0091C4;
+			border: 1vw solid #0091C4;
+			cursor: pointer;
+		}
+
+      		.footer{
+			position:absolute;
+			background-image: url('../Data/Imgs/Background_footer.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-color: #ECF0F8;
+			width: 100%;
+			height: auto;
+		}
+
+		.copyright{
+			width: 40%;
+			position:relative;
+			float:left;
+			font-weight: normal;
+			margin-top: 24%;
+			padding-left: 6%;
+			padding-bottom: 28px;
+			font-size: 1.2vw; 
+      		}
+
+      		.button-fb{
+			background-image: url('../Data/Imgs/Button-fb.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			width: 6.6%;
+			height: 145%;
+			right: 16%;
+			position: absolute;
+			margin-top: 1%;
+		}
+
+      		.button-fb:hover{
+			background-image: url('../Data/Imgs/Button-fb-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+
+		.button-fb:active{
+			background-image: url('../Data/Imgs/Button-fb-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+
+		.button-yt{
+			background-image: url('../Data/Imgs/Button-yt.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			width: 6.6%;
+			height: 145%;
+			right: 8%;
+			position: absolute;
+			margin-top: 1%;
+		}
+
+		.button-yt:hover{
+			background-image: url('../Data/Imgs/Button-yt-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+
+		.button-yt:active{
+			background-image: url('../Data/Imgs/Button-yt-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+
+		.button-email{
+			background-image: url('../Data/Imgs/Button-email.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			width: 6.6%;
+			height: 145%;
+			right: 0%;
+			position: absolute;
+			margin-top: 1%;
+		}
+
+		.button-email:hover{
+			background-image: url('../Data/Imgs/Button-email-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+
+		.button-email:active{
+			background-image: url('../Data/Imgs/Button-email-select.png');
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+
+		h2 {font-family:calibri; margin-left: 6vw; margin-right: 6vw; margin-top: 3.2vw; margin-bottom: 1vw;}
+      		h3 {font-family:calibri; margin: 0.6vw;}
+      		p {font-family:calibri; color:white}
+	</style>
+</head>
+
+<body>
+	<div class='main'>
+		<div class='inop-logo'/>
+		<div class='home-button'><p style='margin:0;'>INICIO</p></div>
+		<div class='games-button'><p style='margin:0;'>JUEGOS</p></div>
+		<div class='about-button'><p style='margin:0;'>SOBRE MÍ</p></div>
+		<a href='https://en-inopgames.blogspot.com' title='English version'><div class='lang-button'/></a>
+	</div>
+
+	<div class='slideshow-container'>
+		<div class='box-container'>
+			<div class='mySlides fade'>
+				<img src='../Data/Imgs/Slideshow-xmas.png' style='width:100%'/>
+				<div class='backbox-xmas'/>
+				<div class='text-xmas'>Llega Santa Claus en plena navidad, asegúrate de entregar la mayor cantidad de regalos y viajar una gran distancia por la ciudad.</div>
+      				<div class='button-xmas'>LEER MÁS</div>
+			</div>
+
+			<div class='mySlides fade'>
+  				<img src='../Data/Imgs/Slideshow-bloxes.png' style='width:100%'/>
+				<div class='backbox-bloxes'/>
+  				<div class='text-bloxes'>Controla la caja verde para empujar otras cajas y superar los obstáculos con el fin de encontrar la salida de cada habitación. &#191;Te animás a resolver los puzzles?</div>
+				<div class='button-bloxes'>LEER MÁS</div>
+			</div>
+
+			<div class='mySlides fade'>
+  				<img src='../Data/Imgs/Slideshow-db2.png' style='width:100%'/>
+				<div class='backbox-db'/>
+    				<div class='text-db'>Llegó Destructive Ball 2, prueba la nueva generación de nuestro juego al estilo Breakout clone.</div>
+				<div class='button-db'>LEER MÁS</div>
+			</div>
+
+			<div class='dots' style='text-align:center'>
+  				<span class='dot' onclick='currentSlide(1)'/> 
+  				<span class='dot' onclick='currentSlide(2)'/> 
+  				<span class='dot' onclick='currentSlide(3)'/> 
+  			</div>
+
+			<div class='news'>
+          			<h2>ÚLTIMAS NOTICIAS</h2>
+				<div class='post-1'><h3>POST #1</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/><a href=''>Leer más...</a></div>
+				<div class='post-2'><h3>POST #2</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/><a href=''>Leer más...</a></div>
+				<div class='post-3'><h3>POST #3</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/><a href=''>Leer más...</a></div>
+          	
+				<div class='news-button'>MÁS NOTICIAS</div>
+					<div class='footer'>
+						<div class='copyright'><p>&#169; 2018 - INOPGAMES. Marca registrada por Pablo Inoriza.</p></div>
+						<div class='copyright'>
+							<a href='https://www.facebook.com/INOPGames-215488275151843/' target='_blank' title='Follow me on Facebook'><div class='button-fb'/></a>
+							<a href='https://www.youtube.com/channel/UCBTZnYbJ7q9hWRyvfWAAKog' target='_blank' title='Subscribe to me on Youtube'><div class='button-yt'/></a>
+							<a href='' target='_blank' title='Contact (Not available for now)'><div class='button-email'/></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<script>
+		var time;
+		var slideIndex = 0;
+		var msec = 8000;
+		showSlides(slideIndex);
+
+		function currentSlide(n) {
+			clearTimeout(time);
+			n--;
+			setTimeout(showSlides(slideIndex = n), msec);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName(&quot;mySlides&quot;);
+			var dots = document.getElementsByClassName(&quot;dot&quot;);
+			if (n &gt; slides.length) {slideIndex = 1}
+			if (n &lt; 1) {slideIndex = slides.length}
+			for (i = 0; i &lt; slides.length; i++) {
+				slides[i].style.display = &quot;none&quot;;  
+			}
+			slideIndex++;
+			if (slideIndex &gt; slides.length) {slideIndex = 1}    
+			for (i = 0; i &lt; dots.length; i++) {
+				dots[i].className = dots[i].className.replace(&quot; active&quot;, &quot;&quot;);
+			}
+			slides[slideIndex-1].style.display = &quot;block&quot;;  
+			dots[slideIndex-1].className += &quot; active&quot;;
+			time = setTimeout(showSlides, msec);
+		}
+	</script>
+
+</body>
+
+</html>

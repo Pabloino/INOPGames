@@ -156,7 +156,7 @@
 			cursor: pointer;
 		}
 
-
+		* {box-sizing: border-box;}
 		.mySlides {display: none;}
       	img {vertical-align: middle;}
 
@@ -165,6 +165,7 @@
         	width: 100%;
         	position: absolute;
 			top: 106px;
+			left: 0px;
       	}
 
      	.box-container{
@@ -601,27 +602,27 @@
 
 		function currentSlide(n) {
 			clearTimeout(time);
-			n--;
+    		n--;
 			setTimeout(showSlides(slideIndex = n), msec);
 		}
 
 		function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName(&quot;mySlides&quot;);
-			var dots = document.getElementsByClassName(&quot;dot&quot;);
-			if (n &gt; slides.length) {slideIndex = 1}
-			if (n &lt; 1) {slideIndex = slides.length}
-			for (i = 0; i &lt; slides.length; i++) {
-				slides[i].style.display = &quot;none&quot;;  
-			}
-			slideIndex++;
-			if (slideIndex &gt; slides.length) {slideIndex = 1}    
-			for (i = 0; i &lt; dots.length; i++) {
-				dots[i].className = dots[i].className.replace(&quot; active&quot;, &quot;&quot;);
-			}
-			slides[slideIndex-1].style.display = &quot;block&quot;;  
-			dots[slideIndex-1].className += &quot; active&quot;;
-			time = setTimeout(showSlides, msec);
+    		var i;
+    		var slides = document.getElementsByClassName("mySlides");
+    		var dots = document.getElementsByClassName("dot");
+    		if (n > slides.length) {slideIndex = 1}    
+  			if (n < 1) {slideIndex = slides.length}
+    		for (i = 0; i < slides.length; i++) {
+       			slides[i].style.display = "none";  
+    		}
+    		slideIndex++;
+    		if (slideIndex > slides.length) {slideIndex = 1}    
+    		for (i = 0; i < dots.length; i++) {
+       			dots[i].className = dots[i].className.replace(" active", "");
+    		}
+    		slides[slideIndex-1].style.display = "block";  
+    		dots[slideIndex-1].className += " active";
+    		time = setTimeout(showSlides, msec);
 		}
 	</script>
 

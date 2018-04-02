@@ -26,13 +26,70 @@
 			background-color:#5B606A;
 		}
 
-      	.main{
-			background-color:#252932;
-			min-width: 100%;
-			height: 106px;
-			position: absolute;
+		.topnav {
+  			overflow: hidden;
+  			background-color:#252932;
+  			display: flex;
+  			flex-direction: row;
+  			justify-content: flex-end;
+  			padding-top: 64px;
+  			padding-right: 100px;
+  			position: absolute;
 			left: 0;
 			top: 0;
+			width: 100%;
+			height: 112px; 
+		}
+
+		.topnav a {
+  			color: #f2f2f2;
+  			text-align: center;
+  			padding: 14px 26px;
+  			text-decoration: none;
+  			font-size: 17px;
+  			font-family: calibri;
+  			margin-left: 12px;	
+  			border-top-left-radius: 10px;
+  			border-top-right-radius: 10px;		
+		}
+
+		.topnav a:hover {
+  			background-color: #ddd;
+  			color: black;
+		}
+
+		.actived {
+  			background-color: #0D76B7;
+  			color: white;
+  			border-top-left-radius: 10px;
+  			border-top-right-radius: 10px;
+  			cursor: pointer;
+		}
+
+		.lang {
+  			border-radius: 25px;
+  			text-align: center;
+  			width: 32px;
+  			height: 32px;
+  			border: 2px solid #ddd;
+  			padding-top: 4px;
+  			font-family: calibri;
+  			font-size: 16px;
+  			color: #ddd;
+  			margin-left: 50px;
+  			margin-top: 8px;
+		}
+
+		.lang:hover {
+  			background-color: #ddd;
+  			color: black;
+  			cursor:pointer;
+		}
+
+		.langmob {display: none;}
+
+		.topnav .icon {
+  			display: none;
 		}
 
      	.inop-logo{
@@ -47,118 +104,6 @@
 			z-index: 2;
 		}
 
-  	    .home-button{
-			position:absolute;
-			text-align: center;
-			font-weight: bold;
-			font-size:20px;
-			top: 52px;
-			right: 460px;
-			height: 50px;
-			width: 120px;
-			padding-top: 18px; 
-		}
-
-		.home-button:hover{
-			background-image: url('../Data/Imgs/Menu-select.png');
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			background-position: bottom;
-			cursor: pointer;
-		}
-
-		.home-button:active{
-			background-image: url('../Data/Imgs/Menu-select.png');
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			background-position: bottom;
-			cursor: pointer;
-		}
-
-		.games-button{
-			position:absolute;
-			text-align: center;
-			font-weight: bold;
-			font-size:20px;
-			top: 52px;
-			right: 330px;
-			height: 50px;
-			width: 120px;
-			padding-top: 18px;
-		}
-
-		.games-button:hover{
-			background-image: url('../Data/Imgs/Menu-select.png');
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			background-position: bottom;
-			cursor: pointer;
-		}
-
-		.games-button:active{
-			background-image: url('../Data/Imgs/Menu-select.png');
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			background-position: bottom;
-			cursor: pointer;
-		}
-
-		.about-button{
-			position:absolute;
-			text-align: center;
-			font-weight: bold;
-			font-size:20px;
-			top: 52px;
-			right: 200px;
-			height: 50px;
-			width: 120px;
-			padding-top: 18px; 
-		}
-
-		.about-button:hover{
-			background-image: url('../Data/Imgs/Menu-select.png');
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			background-position: bottom;
-			cursor: pointer;
-		}
-
-		.about-button:active{
-			background-image: url('../Data/Imgs/Menu-select.png');
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			background-position: bottom;
-			cursor: pointer;
-		}
-
-		.lang-button{
-			background-image: url('../Data/Imgs/En-button.png');
-			background-repeat: no-repeat;
-			background-size: 100% auto;
-			position:absolute;
-			text-align: center;
-			font-weight: bold;
-			font-size:20px;
-			top: 66px;
-			right: 100px;
-			height: 30px;
-			width: 30px;
-		}
-
-		.lang-button:hover{
-			background-image: url('../Data/Imgs/En-button-select.png');
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			cursor: pointer;
-		}
-
-		.lang-button:active{
-			background-image: url('../Data/Imgs/En-button-select.png');
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			cursor: pointer;
-		}
-
 		* {box-sizing: border-box;}
 		.mySlides {display: none;}
       	img {vertical-align: middle;}
@@ -167,7 +112,7 @@
       	.slideshow-container {
         	width: 100%;
         	position: absolute;
-			top: 106px;
+			top: 112px;
 			left: 0px;
       	}
 
@@ -574,18 +519,57 @@
       	h3 {font-family:calibri; margin: 0.6vw;}
       	p {font-family:calibri; color:white;}
 
+      	@media screen and (max-width: 800px) {
 
-      	@media only screen and (max-width: 480px){
-      		.main{
-				background-color:#252932;
-				min-width: 100%;
-				height: 80px;
-				position: absolute;
-				left: 0;
-				top: 0;
-			}
+  			.topnav {
+  				display: block; 
+  				padding-right: 0px;
+  				height: 80px;
+  				padding-top: 20px;
+  				padding-right: 20px;
+  			}
 
-     		.inop-logo{
+  			.topnav a {
+  				border-top-left-radius: 0px;
+  				border-top-right-radius: 0px;
+  				display: none;
+  			}
+
+  			.topnav div {display: none;}
+
+  			.topnav a.icon {
+    			float: right;
+    			display: block;
+    			border-top-left-radius: 10px;
+  				border-top-right-radius: 10px;
+    			border-bottom-left-radius: 10px;
+  				border-bottom-right-radius: 10px;
+  				padding-top: 4px;
+  				padding-bottom: 4px;
+  				padding-left: 10px;
+  				padding-right: 10px;
+  			}
+
+  			.topnav.responsive {
+  				position: absolute; 
+  				height: auto;
+  				padding-top: 80px;
+  				z-index: 1;
+  			}
+
+  			.topnav.responsive .icon {
+    			position: absolute;
+    			right: 20px;
+    			top: 20px;
+  			}
+
+  			.topnav.responsive a {
+   				float: none;
+    			display: block;
+    			text-align: center;
+  			}
+
+  			.inop-logo{
 				background-image: url('../Data/Imgs/Logo_index_page_mob.png');
 				background-repeat: no-repeat;
 				background-size: auto auto;
@@ -610,6 +594,86 @@
 				position: relative;
 				top: 0px;
 			}
+		}
+
+		@media screen and (max-device-width: 800px) {
+
+  			.topnav {
+  				display: block; 
+  				padding-right: 0px;
+  				height: 80px;
+  				padding-top: 20px;
+  				padding-right: 20px;
+  			}
+
+  			.topnav a {
+  				border-top-left-radius: 0px;
+  				border-top-right-radius: 0px;
+  				display: none;
+  			}
+
+  			.topnav div {display: none;}
+
+  			.topnav a.icon {
+    			float: right;
+    			display: block;
+    			border-top-left-radius: 10px;
+  				border-top-right-radius: 10px;
+    			border-bottom-left-radius: 10px;
+  				border-bottom-right-radius: 10px;
+  				padding-top: 4px;
+  				padding-bottom: 4px;
+  				padding-left: 10px;
+  				padding-right: 10px;
+  			}
+
+  			.topnav.responsive {
+  				position: absolute; 
+  				height: auto;
+  				padding-top: 80px;
+  				z-index: 1;
+  			}
+
+  			.topnav.responsive .icon {
+    			position: absolute;
+    			right: 20px;
+    			top: 20px;
+  			}
+
+  			.topnav.responsive a {
+   				float: none;
+    			display: block;
+    			text-align: center;
+  			}
+
+  			.inop-logo{
+				background-image: url('../Data/Imgs/Logo_index_page_mob.png');
+				background-repeat: no-repeat;
+				background-size: auto auto;
+				position:absolute;
+				width: 70px;
+				height: 86px;
+				left: 6vw;
+				top: 12px;
+				z-index: 2;
+			}
+
+			/* Slideshow container */
+			.slideshow-container {
+				width: 100%;
+				position: absolute;
+				top: 80px;
+				left: 0px;
+			}
+
+			.box-container{
+				width: 100%;
+				position: relative;
+				top: 0px;
+			}
+		}
+
+      	@media only screen and (max-width: 480px){
 
 			/* Xmax Deliveries */
       		.button-xmas{
@@ -919,41 +983,7 @@
       	}
 
       	@media only screen and (max-device-width: 480px){
-      		.main{
-				background-color:#252932;
-				min-width: 100%;
-				height: 80px;
-				position: absolute;
-				left: 0;
-				top: 0;
-			}
-
-     		.inop-logo{
-				background-image: url('../Data/Imgs/Logo_index_page_mob.png');
-				background-repeat: no-repeat;
-				background-size: auto auto;
-				position:absolute;
-				width: 70px;
-				height: 86px;
-				left: 6vw;
-				top: 12px;
-				z-index: 2;
-			}
-
-			/* Slideshow container */
-			.slideshow-container {
-				width: 100%;
-				position: absolute;
-				top: 80px;
-				left: 0px;
-			}
-
-			.box-container{
-				width: 100%;
-				position: relative;
-				top: 0px;
-			}
-
+      		
 			/* Xmax Deliveries */
       		.button-xmas{
 				width: 100%;
@@ -1262,12 +1292,14 @@
 </head>
 
 <body>
-	<div class='main'>
-		<div class='inop-logo'></div>
-		<div class='home-button'><p style='margin:0;'>INICIO</p></div>
-		<div class='games-button'><p style='margin:0;'>JUEGOS</p></div>
-		<div class='about-button'><p style='margin:0;'>SOBRE MÍ</p></div>
-		<a href='https://en-inopgames.blogspot.com' title='English version'><div class='lang-button'></div></a>
+	<div class='inop-logo'></div>
+	<div class="topnav" id="myTopnav">	
+		<a class="actived">INICIO</a>
+    	<a href="#games">JUEGOS</a>
+    	<a href="#about">SOBRE MÍ</a>
+    	<div href="https://en-inopgames.blogspot.com" class="lang" title='English version'>EN</div>
+    	<a href="https://en-inopgames.blogspot.com" class="langmob" title='English version'>ENGLISH VERSION</a>
+    	<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 
 	<div class='slideshow-container'>
@@ -1351,6 +1383,15 @@
     		slides[slideIndex-1].style.display = "block";  
     		dots[slideIndex-1].className += " active";
     		time = setTimeout(showSlides, msec);
+		}
+
+		function myFunction() {
+    		var x = document.getElementById("myTopnav");
+    		if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
 		}
 	</script>
 

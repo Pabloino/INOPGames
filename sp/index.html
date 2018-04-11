@@ -519,7 +519,7 @@
       	h3 {font-family:calibri; margin: 0.6vw;}
       	p {font-family:calibri; color:white;}
 
-      	@media screen and (max-width: 768px) {
+      	@media screen and (max-width: 1024px) {
 
   			.topnav {
   				display: block; 
@@ -596,7 +596,7 @@
 			}
 		}
 
-		@media screen and (max-device-width: 768px) {
+		@media screen and (max-device-width: 1024px) {
 
   			.topnav {
   				display: block; 
@@ -674,7 +674,318 @@
 			}
 		}
 
-      	@media only screen and (max-width: 640px){
+		/* Tablets (low-resolution) in PC */
+      	@media only screen and (min-width: 481px) and (max-width: 767px){
+
+			/* Xmax Deliveries */
+      		.button-xmas{
+				width: 100%;
+				font-size: 3vw;
+				top: auto;
+				bottom: 0px;
+				right: 0px;
+			}
+
+			.button-xmas:hover{
+				background-color: #0E875C;
+				border: 5px solid #0E875C;
+				cursor: pointer;
+			}
+
+			.button-xmas:active{
+				background-color: #0E875C;
+				border: 5px solid #0E875C;
+				cursor: pointer;
+			}
+
+			/* Bloxes */
+      		.button-bloxes{
+				width: 100%;
+				font-size: 3vw;
+				top: auto;
+				bottom: 0px;
+				right: 0px;
+			}
+
+			.button-bloxes:hover{
+				background-color: #0091C4;
+				border: 5px solid #0091C4;
+				cursor: pointer;
+			}
+
+			.button-bloxes:active{
+				background-color: #0091C4;
+				border: 5px solid #0091C4;
+				cursor: pointer;
+			}
+
+			/* Dball */
+      		.button-db{
+				width: 100%;
+				font-size: 3vw;
+				top: auto;
+				bottom: 0px;
+				right: 0px;
+			}
+
+			.button-db:hover{
+				background-color: #0091C4;
+				border: 5px solid #0091C4;
+				cursor: pointer;
+			}
+
+			.button-db:active{
+				background-color: #0091C4;
+				border: 5px solid #0091C4;
+				cursor: pointer;
+			}
+
+			.home-button{display: none;}
+			.games-button{display: none;}
+			.about-button{display: none;}
+			.lang-button{display: none;}
+
+			.img-xmas{
+      			background: url('../Data/Imgs/Slideshow-mob-xmas.png');
+      			background-size: 100% auto;
+      			background-repeat: no-repeat;
+      			background-color: #123F49;
+				width: 100%;
+      			height: 102vw;
+      		}
+
+      		.text-xmas{
+        		font-size: 3vw;
+        		left: 0px;
+        		top: auto;
+        		bottom: 5vw;
+        		width: 100%;
+        		text-align: left;
+        		padding: 4vw;
+      		}
+
+     		.backbox-xmas{
+				display: none;
+			}
+
+      		.img-bloxes{
+      			background: url('../Data/Imgs/Slideshow-mob-bloxes.png');
+      			background-size: 100% auto;
+      			background-repeat: no-repeat;
+      			background-color: #123F49;
+				width: 100%;
+      			height: 102vw;
+      		}
+
+
+      		.text-bloxes{
+        		font-size: 3vw;
+        		left: 0px;
+        		top: auto;
+        		bottom: 5vw;
+        		width: 100%;
+        		text-align: left;
+        		padding: 4vw;
+      		}
+
+     		.backbox-bloxes{
+				display: none;
+			}
+
+      		.img-db{
+      			background: url('../Data/Imgs/Slideshow-mob-db2.png');
+      			background-size: 100% auto;
+      			background-repeat: no-repeat;
+      			background-color: #123F49;
+				width: 100%;
+      			height: 102vw;
+      		}
+
+      		.text-db{
+        		font-size: 3vw;
+        		left: 0px;
+        		top: auto;
+        		bottom: 5vw;
+        		width: 100%;
+        		text-align: left;
+        		padding: 4vw;
+      		}
+
+     		.backbox-db{
+				display: none;
+			}
+
+			.dot {
+        		height: 1vw;
+        		width: 30%;
+        		margin: 0 0px;
+        		padding: 0px;
+        		border-radius: 0%;
+      		}
+
+      		.dots {
+				bottom: 17vw;
+				margin: 0px;
+				top: auto;
+				right: 4px;
+				width: 100%;
+			}
+
+			.news{
+				font-family: calibri;
+				font-size: 3vw;
+				width: 100%;
+				font-weight: bold;
+			}
+
+			.post-1{
+				font-size: 3vw;
+				width: 90%;
+				padding: 3.8vw;
+			}
+
+			.post-2{
+				font-size: 3vw;
+				width: 90%;
+				padding: 3.8vw;
+			}
+
+			.post-3{
+				font-size: 3.2vw;
+				width: 90%;
+				padding: 3.2vw;
+			}
+
+			.news-button{
+				width: 70%;
+				font-size: 3vw;
+				margin-left: 14vw;
+				border: 1.8vw solid #0D76B7;
+				font-weight: normal;
+			}
+
+			.news-button:hover{
+				border: 2vw solid #0091C4;
+			}
+
+			.news-button:active{
+				border: 2vw solid #0091C4;
+			}
+
+			.background-mobile{
+				background-image: url('../Data/Imgs/Background_footer_mobile.png');
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				background-position: top;
+				background-color: #5B6069;
+				height: 80vw;
+				position: relative;
+				top: 0px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
+			.footer{display:none;}
+
+			.copyright{display:none;}
+
+			.copyright-mobile{
+				display:inline;
+				font-family: calibri;
+				font-weight: normal;
+				color: white;
+				width: 100%;
+				top: 60vw;
+				font-size: 14px;
+				position: absolute;
+				text-align: center;
+				float: none;
+			}
+
+			.mob-link-fb{
+				background-image: url('../Data/Imgs/Button-fb.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				top: 71vw;
+				width: 32px;
+				height: 32px;
+				position: relative;
+				margin-left: 0vw;
+				margin-bottom: 25px;
+			}
+
+			.mob-link-fb:hover{
+				background-image: url('../Data/Imgs/Button-fb-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-fb:active{
+				background-image: url('../Data/Imgs/Button-fb-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-yt{
+				background-image: url('../Data/Imgs/Button-yt.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				top: 71vw;
+				width: 32px;
+				height: 32px;
+				position: relative;
+				margin-left: 2vw;
+				margin-bottom: 25px;
+			}
+
+			.mob-link-yt:hover{
+				background-image: url('../Data/Imgs/Button-yt-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-yt:active{
+				background-image: url('../Data/Imgs/Button-yt-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-em{
+				background-image: url('../Data/Imgs/Button-email.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				top: 71vw;
+				width: 32px;
+				height: 32px;
+				position: relative;
+				margin-left: 2vw;
+				margin-bottom: 25px;
+			}
+
+			.mob-link-em:hover{
+				background-image: url('../Data/Imgs/Button-email-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-em:active{
+				background-image: url('../Data/Imgs/Button-email-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			h2 {text-align: center; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 14px;}
+      	}
+
+      	/* Mobiles in PC */
+      	@media only screen and (max-width: 480px){
 
 			/* Xmax Deliveries */
       		.button-xmas{
@@ -983,7 +1294,318 @@
 			h2 {text-align: center; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 14px;}
       	}
 
-      	@media only screen and (max-device-width: 640px){
+      	/* Tablets (low-resolution) in devices */
+      	@media only screen and (min-device-width: 481px) and (max-device-width: 767px){
+
+			/* Xmax Deliveries */
+      		.button-xmas{
+				width: 100%;
+				font-size: 3vw;
+				top: auto;
+				bottom: 0px;
+				right: 0px;
+			}
+
+			.button-xmas:hover{
+				background-color: #0E875C;
+				border: 5px solid #0E875C;
+				cursor: pointer;
+			}
+
+			.button-xmas:active{
+				background-color: #0E875C;
+				border: 5px solid #0E875C;
+				cursor: pointer;
+			}
+
+			/* Bloxes */
+      		.button-bloxes{
+				width: 100%;
+				font-size: 3vw;
+				top: auto;
+				bottom: 0px;
+				right: 0px;
+			}
+
+			.button-bloxes:hover{
+				background-color: #0091C4;
+				border: 5px solid #0091C4;
+				cursor: pointer;
+			}
+
+			.button-bloxes:active{
+				background-color: #0091C4;
+				border: 5px solid #0091C4;
+				cursor: pointer;
+			}
+
+			/* Dball */
+      		.button-db{
+				width: 100%;
+				font-size: 3vw;
+				top: auto;
+				bottom: 0px;
+				right: 0px;
+			}
+
+			.button-db:hover{
+				background-color: #0091C4;
+				border: 5px solid #0091C4;
+				cursor: pointer;
+			}
+
+			.button-db:active{
+				background-color: #0091C4;
+				border: 5px solid #0091C4;
+				cursor: pointer;
+			}
+
+			.home-button{display: none;}
+			.games-button{display: none;}
+			.about-button{display: none;}
+			.lang-button{display: none;}
+
+			.img-xmas{
+      			background: url('../Data/Imgs/Slideshow-mob-xmas.png');
+      			background-size: 100% auto;
+      			background-repeat: no-repeat;
+      			background-color: #123F49;
+				width: 100%;
+      			height: 102vw;
+      		}
+
+      		.text-xmas{
+        		font-size: 3vw;
+        		left: 0px;
+        		top: auto;
+        		bottom: 5vw;
+        		width: 100%;
+        		text-align: left;
+        		padding: 4vw;
+      		}
+
+     		.backbox-xmas{
+				display: none;
+			}
+
+      		.img-bloxes{
+      			background: url('../Data/Imgs/Slideshow-mob-bloxes.png');
+      			background-size: 100% auto;
+      			background-repeat: no-repeat;
+      			background-color: #123F49;
+				width: 100%;
+      			height: 102vw;
+      		}
+
+
+      		.text-bloxes{
+        		font-size: 3vw;
+        		left: 0px;
+        		top: auto;
+        		bottom: 5vw;
+        		width: 100%;
+        		text-align: left;
+        		padding: 4vw;
+      		}
+
+     		.backbox-bloxes{
+				display: none;
+			}
+
+      		.img-db{
+      			background: url('../Data/Imgs/Slideshow-mob-db2.png');
+      			background-size: 100% auto;
+      			background-repeat: no-repeat;
+      			background-color: #123F49;
+				width: 100%;
+      			height: 102vw;
+      		}
+
+      		.text-db{
+        		font-size: 3vw;
+        		left: 0px;
+        		top: auto;
+        		bottom: 5vw;
+        		width: 100%;
+        		text-align: left;
+        		padding: 4vw;
+      		}
+
+     		.backbox-db{
+				display: none;
+			}
+
+			.dot {
+        		height: 1vw;
+        		width: 30%;
+        		margin: 0 0px;
+        		padding: 0px;
+        		border-radius: 0%;
+      		}
+
+      		.dots {
+				bottom: 17vw;
+				margin: 0px;
+				top: auto;
+				right: 4px;
+				width: 100%;
+			}
+
+			.news{
+				font-family: calibri;
+				font-size: 3vw;
+				width: 100%;
+				font-weight: bold;
+			}
+
+			.post-1{
+				font-size: 3vw;
+				width: 90%;
+				padding: 3.8vw;
+			}
+
+			.post-2{
+				font-size: 3vw;
+				width: 90%;
+				padding: 3.8vw;
+			}
+
+			.post-3{
+				font-size: 3.2vw;
+				width: 90%;
+				padding: 3.2vw;
+			}
+
+			.news-button{
+				width: 70%;
+				font-size: 3vw;
+				margin-left: 14vw;
+				border: 1.8vw solid #0D76B7;
+				font-weight: normal;
+			}
+
+			.news-button:hover{
+				border: 2vw solid #0091C4;
+			}
+
+			.news-button:active{
+				border: 2vw solid #0091C4;
+			}
+
+			.background-mobile{
+				background-image: url('../Data/Imgs/Background_footer_mobile.png');
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				background-position: top;
+				background-color: #5B6069;
+				height: 80vw;
+				position: relative;
+				top: 0px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
+			.footer{display:none;}
+
+			.copyright{display:none;}
+
+			.copyright-mobile{
+				display:inline;
+				font-family: calibri;
+				font-weight: normal;
+				color: white;
+				width: 100%;
+				top: 60vw;
+				font-size: 14px;
+				position: absolute;
+				text-align: center;
+				float: none;
+			}
+
+			.mob-link-fb{
+				background-image: url('../Data/Imgs/Button-fb.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				top: 71vw;
+				width: 32px;
+				height: 32px;
+				position: relative;
+				margin-left: 0vw;
+				margin-bottom: 25px;
+			}
+
+			.mob-link-fb:hover{
+				background-image: url('../Data/Imgs/Button-fb-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-fb:active{
+				background-image: url('../Data/Imgs/Button-fb-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-yt{
+				background-image: url('../Data/Imgs/Button-yt.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				top: 71vw;
+				width: 32px;
+				height: 32px;
+				position: relative;
+				margin-left: 2vw;
+				margin-bottom: 25px;
+			}
+
+			.mob-link-yt:hover{
+				background-image: url('../Data/Imgs/Button-yt-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-yt:active{
+				background-image: url('../Data/Imgs/Button-yt-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-em{
+				background-image: url('../Data/Imgs/Button-email.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				top: 71vw;
+				width: 32px;
+				height: 32px;
+				position: relative;
+				margin-left: 2vw;
+				margin-bottom: 25px;
+			}
+
+			.mob-link-em:hover{
+				background-image: url('../Data/Imgs/Button-email-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-em:active{
+				background-image: url('../Data/Imgs/Button-email-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			h2 {text-align: center; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 14px;}
+      	}
+
+      	/* Mobiles in devices */
+      	@media only screen and (max-device-width: 480px){
       		
 			/* Xmax Deliveries */
       		.button-xmas{

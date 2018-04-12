@@ -214,7 +214,7 @@
 			cursor: pointer;
 		}
 
-		@media only screen and (max-width: 480px){
+		@media only screen and (max-width: 767px){
 			.inop-logo{
 				background-image: url('Data/Imgs/Logo_index_page.png');
 				background-repeat: no-repeat;
@@ -285,12 +285,10 @@
 				background-size: 100% auto;
 				background-position: top;
 				background-color: #5B6069;
-				height: 300px;
+				height: 80vw;
 				position: relative;
 				top: 300px;
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
+				
 			}
 
 			.footer{display:none;}
@@ -309,11 +307,17 @@
 				float: none;
 			}
 
+			.links{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
 			.mob-link-fb{
 				background-image: url('Data/Imgs/Button-fb.png');
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
-				top: 76vw;
+				top: 3vw;
 				width: 32px;
 				height: 32px;
 				position: relative;
@@ -339,7 +343,7 @@
 				background-image: url('Data/Imgs/Button-yt.png');
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
-				top: 76vw;
+				top: 3vw;
 				width: 32px;
 				height: 32px;
 				position: relative;
@@ -365,7 +369,7 @@
 				background-image: url('Data/Imgs/Button-email.png');
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
-				top: 76vw;
+				top: 3vw;
 				width: 32px;
 				height: 32px;
 				position: relative;
@@ -575,10 +579,13 @@
 			<div id='line4' class='line'></div>
 		</div>
 		<div class='background-mobile'>
-			<div class='copyright-mobile'>(c) 2018 - INOPGAMES.<br />Registered trademark by Pablo Inoriza.</div>
+			<div class='copyright-mobile'>(c) 2018 - INOPGAMES.<br />Registered trademark by Pablo Inoriza.
+				<div class='links'>
 			<a href='https://www.facebook.com/INOPGames-215488275151843/' target='_blank' title='Follow me on Facebook'><div class='mob-link-fb'></div></a>
 			<a href='https://www.youtube.com/channel/UCBTZnYbJ7q9hWRyvfWAAKog' target='_blank' title='Subscribe to me on Youtube'><div class='mob-link-yt'></div></a>
 			<a href='' target='_blank' title='Contact (Not available for now)'><div class='mob-link-em'></div></a>
+				</div>
+			</div>
 		</div>
 	</div>
 

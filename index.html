@@ -49,6 +49,9 @@
 			bottom: 32%;
 			left: 130%;
 			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 
 		.text-lang{
@@ -58,7 +61,7 @@
 			text-align: center;
 			width: 100%;
 			position: relative;
-			top: 3vw;
+			margin: 3vw;
 		}
 
 		.line{
@@ -67,32 +70,18 @@
 			background-size: 100% 100%;
 			position: relative;
 			width: 70%;
-			left: 4.2vw;
 			height: 1px;
 		}
 
-		#line1{
-			top: 6vw;
-		}
+		#sep{margin-bottom: 2vw;}
 
-		#line2{
-			top: 9vw;
-		}
-
-		#line3{
-			top: 11vw;
-		}
-
-		#line4{
-			top: 14vw;
-		}
 
 		.button{
 			background-image: none;
 			font-family: calibri;
 			font-size: 1.3vw;
 			color: white;
-			width: 100%;
+			width: 70%;
 			height: 2.4vw;
 			position: relative;
 			text-align: center;
@@ -214,6 +203,11 @@
 			cursor: pointer;
 		}
 
+		a {color: white;}
+		a:visited {color: white;}
+		a:hover {color: white;}
+		a:active {color: white;}
+
 		@media only screen and (max-width: 767px){
 			.inop-logo{
 				background-image: url('Data/Imgs/Logo_index_page.png');
@@ -241,7 +235,9 @@
 
 			.text-lang{
 				font-size: 18px;
-				top: 24px;
+				top: 0px;
+				width: 50%;
+				margin: 24px;
 			}
 
 			body{
@@ -250,23 +246,21 @@
 			}
 
 			.line{
-				background-size: 70% 100%;
+				background-size: 100% 100%;
 				background-position: center; 
-				width: 100%;
+				width: 50%;
 				left: 0px;
 				height: 1px;
 			}
 
-			#line1{top: 50px;}
-			#line2{top: 80px;}
-			#line3{top: 90px;}
-			#line4{top: 120px;}
+			#sep{margin-bottom: 10px;}
 
 			.button{
 				font-size: 14px;
 				height: 23px;
 				padding-top: 7px;
 				top: 0px;
+				width: 50%;
 			}
 
 			.button:hover{
@@ -392,6 +386,12 @@
 			}
 		}
 
+		@media only screen and (max-width: 480px){
+			.text-lang{width: 80%;}
+			.line{width: 80%;}
+			.button{width: 80%;}
+		}
+
 		@media only screen and (max-device-width: 767px){
 			.text-lang{font-size: 16px;}
 
@@ -413,14 +413,12 @@
 	<div class='inop-logo'>
 		<div class='panel-lang'>
 			<div class='text-lang'>SELECT LANGUAGE</div>
-			<div id='line1' class='line'>
-				<div class='button'>ENGLISH</div>
-			</div>
-			<div id='line2' class='line'></div>
-			<div id='line3' class='line'>
-				<a href='sp/index.html' style="text-decoration:none"><div class='button'>SPANISH</div></a>
-			</div>
-			<div id='line4' class='line'></div>
+			<div class='line'></div>
+			<div class='button'>ENGLISH</div>
+			<div id='sep' class='line'></div>
+			<div class='line'></div>
+			<div class='button'><a href='sp/index.html' style="text-decoration:none">SPANISH</a></div>
+			<div class='line'></div>
 		</div>
 		<div class='background-mobile'>
 			<div class='copyright-mobile'>(c) 2018 - INOPGAMES.<br />Registered trademark by Pablo Inoriza.

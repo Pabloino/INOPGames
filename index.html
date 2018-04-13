@@ -75,28 +75,27 @@
 
 		#sep{margin-bottom: 2vw;}
 
-
-		.button{
+		a.button{
 			background-image: none;
 			font-family: calibri;
 			font-size: 1.3vw;
 			color: white;
+			display:block; 
 			width: 70%;
 			height: 2.4vw;
 			position: relative;
 			text-align: center;
 			padding-top: 0.6vw;
-			top: 0.1vw;
 		}
 
-		.button:hover{
+		a.button:hover{
 			background-image: url('Data/Imgs/Select-button.png');
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 			cursor: pointer;
 		}
 
-		.button:active{
+		a.button:active{
 			background-image: url('Data/Imgs/Select-button.png');
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
@@ -203,7 +202,7 @@
 			cursor: pointer;
 		}
 
-		a {color: white; display:block;}
+		a {color: white;}
 		a:visited {color: white;}
 		a:hover {color: white;}
 		a:active {color: white;}
@@ -255,7 +254,7 @@
 
 			#sep{margin-bottom: 10px;}
 
-			.button{
+			a.button{
 				font-size: 14px;
 				height: 23px;
 				padding-top: 7px;
@@ -263,12 +262,12 @@
 				width: 50%;
 			}
 
-			.button:hover{
+			a.button:hover{
 				background-size: 70% 100%;
 				background-position: center; 
 			}
 
-			.button:active{
+			a.button:active{
 				background-size: 70% 100%;
 				background-position: center; 
 			}
@@ -389,13 +388,13 @@
 		@media only screen and (max-width: 480px){
 			.text-lang{width: 80%;}
 			.line{width: 80%;}
-			.button{width: 80%;}
+			a.button{width: 80%;}
 		}
 
 		@media only screen and (max-device-width: 767px){
 			.text-lang{font-size: 16px;}
 
-			.button{
+			a.button{
 				height: 22px;
 				padding-top: 8px;
 			}
@@ -414,10 +413,10 @@
 		<div class='panel-lang'>
 			<div class='text-lang'>SELECT LANGUAGE</div>
 			<div class='line'></div>
-			<div class='button'>ENGLISH</div>
+			<a class='button' href='en/index.html' style="text-decoration:none">ENGLISH</a>
 			<div id='sep' class='line'></div>
 			<div class='line'></div>
-			<div class='button'><a href='sp/index.html' style="text-decoration:none">SPANISH</a></div>
+			<a class='button' href='sp/index.html' style="text-decoration:none">SPANISH</a>
 			<div class='line'></div>
 		</div>
 		<div class='background-mobile'>

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html lang="es">
 
 <head> 
 	<title>INOPGames</title>
@@ -66,7 +66,7 @@
   			cursor: pointer;
 		}
 
-		.lang {
+		a#lang {
   			border-radius: 25px;
   			text-align: center;
   			width: 32px;
@@ -77,10 +77,10 @@
   			font-size: 16px;
   			color: #ddd;
   			margin-left: 50px;
-  			margin-top: 8px;
+  			margin-top: 7px;
 		}
 
-		.lang:hover {
+		a#lang:hover {
   			background-color: #ddd;
   			color: black;
   			cursor:pointer;
@@ -537,6 +537,8 @@
 
   			.topnav div {display: none;}
 
+  			a#lang{display: none;}
+
   			.topnav a.icon {
     			float: right;
     			display: block;
@@ -678,11 +680,6 @@
 				border: 5px solid #0091C4;
 				cursor: pointer;
 			}
-
-			.home-button{display: none;}
-			.games-button{display: none;}
-			.about-button{display: none;}
-			.lang-button{display: none;}
 
 			.img-xmas{
       			background: url('../Data/Imgs/Slideshow-mob-xmas.png');
@@ -1015,7 +1012,7 @@
 		<a class="actived">INICIO</a>
     	<a href="#games">JUEGOS</a>
     	<a href="#about">SOBRE MÍ</a>
-    	<div href="https://en-inopgames.blogspot.com" class="lang" title='English version'>EN</div>
+    	<a href="https://en-inopgames.blogspot.com" id="lang" title='English version' style="padding: 4px 0px 0px 0px;">EN</a>
     	<a href="https://en-inopgames.blogspot.com" class="langmob" title='English version'>ENGLISH VERSION</a>
     	<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()"></a>
 	</div>

@@ -1,0 +1,543 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head> 
+	<title>INOPGames</title>
+
+	<!-- Chrome, Safari, IE -->
+	<link href='../Data/Imgs/Logo_ico16.png' rel='shortcut icon' sizes='16x16'/>
+	<link href='../Data/Imgs/Logo_ico32.png' rel='shortcut icon' sizes='32x32'/>
+	<link href='../Data/Imgs/Logo_ico48.png' rel='shortcut icon' sizes='48x48'/>
+	<link href='../Data/Imgs/Logo_ico64.png' rel='shortcut icon' sizes='64x64'/>
+	<link href='../Data/Imgs/Logo_ico128.png' rel='shortcut icon' sizes='128x128'/>
+
+	<!-- Firefox, Opera  -->
+	<link href='../Data/Imgs/Logo_ico16.png' rel='icon' sizes='16x16'/>
+	<link href='../Data/Imgs/Logo_ico32.png' rel='icon' sizes='32x32'/>
+	<link href='../Data/Imgs/Logo_ico48.png' rel='icon' sizes='48x48'/>
+	<link href='../Data/Imgs/Logo_ico64.png' rel='icon' sizes='64x64'/>
+	<link href='../Data/Imgs/Logo_ico128.png' rel='icon' sizes='128x128'/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<style>
+		body {
+			background-color:#5B606A;
+		}
+
+		.topnav {
+  			overflow: hidden;
+  			background-color:#252932;
+  			display: flex;
+  			flex-direction: row;
+  			justify-content: flex-end;
+  			padding-top: 64px;
+  			padding-right: 100px;
+  			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 112px; 
+		}
+
+		.topnav a {
+  			color: #f2f2f2;
+  			text-align: center;
+  			padding: 14px 26px;
+  			text-decoration: none;
+  			font-size: 17px;
+  			font-family: calibri;
+  			margin-left: 12px;	
+  			border-top-left-radius: 10px;
+  			border-top-right-radius: 10px;		
+		}
+
+		.topnav a:hover {
+  			background-color: #ddd;
+  			color: black;
+		}
+
+		.actived {
+  			background-color: #0D76B7;
+  			color: white;
+  			border-top-left-radius: 10px;
+  			border-top-right-radius: 10px;
+  			cursor: pointer;
+		}
+
+		a#lang {
+  			border-radius: 25px;
+  			text-align: center;
+  			width: 32px;
+  			height: 32px;
+  			border: 2px solid #ddd;
+  			padding-top: 4px;
+  			font-family: calibri;
+  			font-size: 16px;
+  			color: #ddd;
+  			margin-left: 50px;
+  			margin-top: 7px;
+		}
+
+		a#lang:hover {
+  			background-color: #ddd;
+  			color: black;
+  			cursor:pointer;
+		}
+
+		.langmob {display: none;}
+
+		.topnav .icon {
+  			display: none;
+		}
+
+     	.inop-logo{
+			background-image: url('../Data/Imgs/Logo_index_page.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			position:absolute;
+			width: 98px;
+			height: 120px;
+			left: 6%;
+			top: 15px;
+			z-index: 2;
+		}
+
+		* {box-sizing: border-box;}
+      	img {vertical-align: middle;}
+
+      	.main-content{
+			position:absolute;
+			background-color: #ECF0F8;
+			width: 100%;
+			top: 112px;
+			left: 0px;
+		}
+
+		.about-text{
+			font-family: calibri;
+			font-weight: normal;
+			color: black;
+			font-size: 1.4vw;
+			padding-top: 3vw;
+			padding-bottom: 5vw;
+			padding-left: 5vw;
+			padding-right: 5vw;
+		}
+
+		.footer{
+			position: relative;
+			font-family: calibri;
+			font-size: 1.2vw;
+			font-weight: normal;
+			color: white;
+			height: 29vw;
+			padding-top: 23.8vw;
+			padding-bottom: 2.6vw;
+			padding-left: 6vw;
+			padding-right: 6vw;
+			background-image: url('../Data/Imgs/Background_footer.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+		}
+	
+		.copyright{
+			top: 0.8vw;
+			width: 60%;
+			position: relative;
+			float: left;
+		}
+
+      	.link-fb{
+			background-image: url('../Data/Imgs/Button-fb.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			top: 0px;
+			width: 2.9vw;
+			height: 2.9vw;
+			position: relative;
+			float: right;
+			margin-left: 0.8vw;
+		}
+
+		.link-fb:hover{
+			background-image: url('../Data/Imgs/Button-fb-select.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			cursor: pointer;
+		}
+
+		.link-fb:active{
+			background-image: url('../Data/Imgs/Button-fb-select.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			cursor: pointer;
+		}
+
+		.link-yt{
+			background-image: url('../Data/Imgs/Button-yt.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			top: 0px;
+			width: 2.9vw;
+			height: 2.9vw;
+			position: relative;
+			float: right;
+			margin-left: 0.8vw;
+		}
+
+		.link-yt:hover{
+			background-image: url('../Data/Imgs/Button-yt-select.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			cursor: pointer;
+		}
+
+		.link-yt:active{
+			background-image: url('../Data/Imgs/Button-yt-select.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			cursor: pointer;
+		}
+
+		.link-em{
+			background-image: url('../Data/Imgs/Button-email.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			top: 0px;
+			width: 2.9vw;
+			height: 2.9vw;
+			position: relative;
+			float: right;
+			margin-left: 0.8vw;
+		}
+
+		.link-em:hover{
+			background-image: url('../Data/Imgs/Button-email-select.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			cursor: pointer;
+		}
+
+		.link-em:active{
+			background-image: url('../Data/Imgs/Button-email-select.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			cursor: pointer;
+		}
+
+		.copyright-mobile{display:none;}
+
+      	p {font-family:calibri; color:white;}
+
+      	@media screen and (max-width: 1024px) {
+
+  			.topnav {
+  				display: block; 
+  				padding-right: 0px;
+  				height: 80px;
+  				padding-top: 20px;
+  				padding-right: 20px;
+  			}
+
+  			.topnav a {
+  				border-top-left-radius: 0px;
+  				border-top-right-radius: 0px;
+  				display: none;
+  			}
+
+  			.topnav div {display: none;}
+
+  			a#lang{display: none;}
+
+  			.topnav a.icon {
+    			float: right;
+    			display: block;
+    			border-top-left-radius: 10px;
+  				border-top-right-radius: 10px;
+    			border-bottom-left-radius: 10px;
+  				border-bottom-right-radius: 10px;
+  				padding-top: 4px;
+  				padding-bottom: 4px;
+  				padding-left: 10px;
+  				padding-right: 10px;
+  				background-image: url('../Data/Imgs/nav-icon.png');
+  				background-repeat: no-repeat;
+				background-size: auto auto;
+				background-position: center;
+				width: 41px;
+				height: 39px;
+  			}
+
+  			.topnav a.icon:hover {
+  				background-color: #707C96;
+  			}
+
+  			.topnav.responsive {
+  				position: absolute; 
+  				height: auto;
+  				padding-top: 110px;
+  				z-index: 1;
+  			}
+
+  			.topnav.responsive .icon {
+    			position: absolute;
+    			right: 20px;
+    			top: 20px;
+  			}
+
+  			.topnav.responsive a {
+   				float: none;
+    			display: block;
+    			text-align: center;
+  			}
+
+  			.inop-logo{
+				background-image: url('../Data/Imgs/Logo_index_page_mob.png');
+				background-repeat: no-repeat;
+				background-size: auto auto;
+				position:absolute;
+				width: 70px;
+				height: 86px;
+				left: 6vw;
+				top: 12px;
+				z-index: 2;
+			}
+
+			.main-content {
+  				top: 80px;
+  			}
+
+		}
+
+		@media screen and (max-device-width: 1024px) {
+
+  			.topnav {padding-top: 21px;}
+  			.topnav a.icon:hover {background-color: #252932;}
+  			.topnav.responsive .icon {top: 21px;}
+		}
+
+		/* Tablets (low-resolution) in PC */
+      	@media only screen and (max-width: 767px){
+
+			.background-mobile{
+				background-image: url('../Data/Imgs/Background_footer_mobile.png');
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				background-position: top;
+				background-color: #5B6069;
+				height: 80vw;
+				position: relative;
+				top: 0px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
+			.footer{display:none;}
+
+			.copyright{display:none;}
+
+			.copyright-mobile{
+				display:inline;
+				font-family: calibri;
+				font-weight: normal;
+				color: white;
+				width: 100%;
+				top: 60vw;
+				font-size: 14px;
+				position: absolute;
+				text-align: center;
+				float: none;
+			}
+
+			.links{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
+			.mob-link-fb{
+				background-image: url('../Data/Imgs/Button-fb.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				top: 3vw;
+				width: 32px;
+				height: 32px;
+				position: relative;
+				margin-left: 0vw;
+				margin-bottom: 25px;
+			}
+
+			.mob-link-fb:hover{
+				background-image: url('../Data/Imgs/Button-fb-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-fb:active{
+				background-image: url('../Data/Imgs/Button-fb-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-yt{
+				background-image: url('../Data/Imgs/Button-yt.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				top: 3vw;
+				width: 32px;
+				height: 32px;
+				position: relative;
+				margin-left: 2vw;
+				margin-bottom: 25px;
+			}
+
+			.mob-link-yt:hover{
+				background-image: url('../Data/Imgs/Button-yt-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-yt:active{
+				background-image: url('../Data/Imgs/Button-yt-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-em{
+				background-image: url('../Data/Imgs/Button-email.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				top: 3vw;
+				width: 32px;
+				height: 32px;
+				position: relative;
+				margin-left: 2vw;
+				margin-bottom: 25px;
+			}
+
+			.mob-link-em:hover{
+				background-image: url('../Data/Imgs/Button-email-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+			.mob-link-em:active{
+				background-image: url('../Data/Imgs/Button-email-select.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				cursor: pointer;
+			}
+
+
+      	}
+
+      	/* Mobiles in PC */
+      	@media only screen and (max-width: 480px){
+
+			.copyright-mobile{font-size: 12px;}
+			.mob-link-fb{top: 4vw;}
+			.mob-link-yt{top: 4vw;}
+			.mob-link-em{top: 4vw;}
+      	}
+
+      	/* Tablets (low-resolution) in devices */
+      	@media only screen and (min-device-width: 481px) and (max-device-width: 767px){
+
+			.background-mobile{height: 82vw;}
+			.copyright-mobile{top: 61vw;}
+			.mob-link-fb{top: 4vw;}
+			.mob-link-yt{top: 4vw;}
+			.mob-link-em{top: 4vw;}
+
+			h2 {text-align: center; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 14px;}
+      	}
+
+      	/* Mobiles in devices */
+      	@media only screen and (max-device-width: 480px){
+      		
+      		.copyright-mobile{top: 62vw;}
+      	}
+
+	</style>
+</head>
+
+<body>
+	<div class='inop-logo'></div>
+	<div class="topnav" id="myTopnav">	
+		<a href="index.html">INICIO</a>
+    	<a href="#games">JUEGOS</a>
+    	<a class="actived">SOBRE MÍ</a>
+    	<a href="https://en-inopgames.blogspot.com" id="lang" title='English version' style="padding: 4px 0px 0px 0px;">EN</a>
+    	<a href="https://en-inopgames.blogspot.com" class="langmob" title='English version'>ENGLISH VERSION</a>
+    	<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()"></a>
+	</div>
+
+	<div class='main-content'>
+
+		<div class='about-text'>
+			<h2>Sobre INOPGames</h2>
+
+			INOPGames es una marca creada por Pablo Inoriza, un diseñador gráfico, data scientist y estudiante de ingeniería en informática de la Universidad de Buenos Aires. No se trata de una empresa sinó de un nombre indicativo que representa sus proyectos de software orientado a los videosjuegos.
+			<br />
+			Desde mi perspectiva, los años de mucha afición por los videosjuegos me llevó al sueño de poder crearme uno propio, hasta un punto donde me surgió la pregunta sobre cómo se desarrollaría un videojuego basado en mis propias creatividades y empezar a investigar al respecto, ahí fué cuando dió inicio mis proyectos en la creación de videosjuegos, dándole una marca que se lo conoce como INOPGames.
+			<br /><br />
+			El objetivo de estos proyectos no solo abarcan a algo que me fascine hacer, sinó observar las impresiones del público a la hora de probar mis videosjuegos y ver qué opinan respecto a mis obras. No hay nada mejor en la vida que el público valore positivamente algo que te fascine hacer.
+			
+			<h3>Un poco de historia</h3>
+
+			<b>2007:</b> Todo surgió a principios del 2007 ante la idea de investigar sobre cómo se desarrolla un videojuego propio, en aquel momento no tenía ningún conocimiento de programación. Luego de adquirir un conocimiento básico, comencé a crear algunos juegos básicos, como un pacman, un breakout, o juegos similares usando el software de Game Maker. De todos estos, el juego de breakout brindaba mejores resultados respecto a los otros estilos y se hizo hincapié en el mismo, llamándolo Destroyed Box (que actualmente lo conocemos como Destructive Ball, que se lanzó años después como un remake del Destroyed Box), donde se lanzó una versión previa con 5 niveles y se lo distribuyó a usuarios cercanos. En aquel momento, se bautizó estos proyectos con el nombre de Pablo-ino Software, que un año después pasó a llamarse INOPGames.
+			<br /><br />
+			<b>2008:</b> Se lanzó la versión definitiva del Destroyed Box, siendo el primer videojuego completo lanzado por INOPGames, contando con 5 zonas de 6 niveles cada uno y un final boss. Este videojuego, al igual que su versión previa, fué distribuído a usuarios cercanos y solo disponía del idioma español.
+			<br /><br />
+			<b>2010:</b> Luego de dos años profundizando el manejo de lenguajes de programación, se optó por poner en práctica esa experiencia adquirida desarrollando un remake del Destroyed Box, bautizándolo como Destructive Ball, en el que contaba con los mismos niveles pero con un motor gráfico mejorado, una jugabilidad mucho más eficaz y soporte para idioma inglés, para facilitar su uso a cualquier usuario del mundo. Por este motivo, Destroyed Box fué retirado de la distribución y sustituído por Destructive Ball. Por otro lado, se lanzó la página web de INOPGames como un blog para distribuir fácilmente los videosjuegos y a un nivel global.
+			<br /><br />
+			<b>2011:</b> Este fué un año de mucho avance, por un lado se lanzó Bloxes: In The Tower a primer mitad de año, un nuevo juego de puzzle que recibió críticas muy positivas por usuarios de diferentes partes del mundo, y fué posicionado dentro del top ten de los mejores juegos de puzzle de Abril 2011 en download.com (página líder mundial en descargas), convirtiéndose en el juego más creativo y éxitoso lanzado por INOPGames hasta la actualidad. Por otro lado, durante la segunda mitad del mismo año, se lanzó Destructive Ball 2, que se renovó por completo incluyendo un motor gráfico más potente, más variedad de niveles y características, y una jugabilidad completamente mejorada y más interactiva.
+			<br /><br />
+			<b>2015:</b> En las navidades del mismo año se lanzó Xmas Deliveries, un juego navideño al estilo flappy bird como celebramiento de las navidades. Siendo el último juego desarrollado con Game Maker.
+			<br /><br />
+			<b>2016:</b> Se opta el motor de Unity como desarrollo de futuros videosjuegos. Se realizaron algunos proyectos para poner en práctica dicho motor.
+			<br /><br />
+			<b>2018:</b> Renovamiento completo de la página web de INOPGames con Github Pages, optimizado para PC y dispositivos.
+
+		</div>
+
+		<div class='background-mobile'>
+			<div class='copyright-mobile'>(c) 2018 - INOPGAMES.<br />Marca registrada por Pablo Inoriza.
+				<div class='links'>
+					<a href='https://www.facebook.com/INOPGames-215488275151843/' target='_blank' title='Seguime en Facebook'><div class='mob-link-fb'></div></a>
+					<a href='https://www.youtube.com/channel/UCBTZnYbJ7q9hWRyvfWAAKog' target='_blank' title='Suscribete a mi canal de Youtube'><div class='mob-link-yt'></div></a>
+					<a href='' target='_blank' title='Contacto (No disponible por ahora)'><div class='mob-link-em'></div></a>
+				</div>
+			</div>
+		</div>
+		<div class='footer'>
+			<div class='copyright'>(c) 2018 - INOPGAMES. Marca registrada por Pablo Inoriza.</div>
+			<a href='' target='_blank' title='Contacto (No disponible por ahora)'><div class='link-em'></div></a>
+			<a href='https://www.youtube.com/channel/UCBTZnYbJ7q9hWRyvfWAAKog' target='_blank' title='Suscribete a mi canal de Youtube'><div class='link-yt'></div></a>
+			<a href='https://www.facebook.com/INOPGames-215488275151843/' target='_blank' title='Seguime en Facebook'><div class='link-fb'></div></a>
+		</div>
+	</div>
+
+
+	<script>
+		function myFunction() {
+    		var x = document.getElementById("myTopnav");
+    		if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+</body>
+
+</html>

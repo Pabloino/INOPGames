@@ -305,10 +305,7 @@
 				z-index: 2;
 			}
 
-			.main-content {
-  				top: 80px;
-  			}
-
+			.main-content {top: 80px;}
 		}
 
 		@media screen and (max-device-width: 1024px) {
@@ -320,6 +317,10 @@
 
 		/* Tablets (low-resolution) in PC */
       	@media only screen and (max-width: 767px){
+
+      		.about-text{
+				font-size: 3vw;
+			}
 
 			.background-mobile{
 				background-image: url('../Data/Imgs/Background_footer_mobile.png');
@@ -435,17 +436,22 @@
 				background-size: 100% 100%;
 				cursor: pointer;
 			}
-
-
       	}
 
       	/* Mobiles in PC */
       	@media only screen and (max-width: 480px){
 
+      		.about-text{
+      			font-size: 3.8vw;
+      			padding-top: 5vw;
+      		}
 			.copyright-mobile{font-size: 12px;}
 			.mob-link-fb{top: 4vw;}
 			.mob-link-yt{top: 4vw;}
 			.mob-link-em{top: 4vw;}
+
+			h2{text-align: center;}
+			h3{text-align: center;}
       	}
 
       	/* Tablets (low-resolution) in devices */

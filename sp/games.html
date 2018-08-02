@@ -133,14 +133,58 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
-			border: 1px solid blue;
 		}
 
 		.button-game{
 			width: 26vw;
 			height: 14vw;
 			margin: 0.5vw;
-			border: 1px solid red;
+		}
+
+		#b-xmas {
+			background-image: url('../Data/Imgs/Button-xmas.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+		}
+
+		.image{
+			display: block;
+  			width: 100%;
+  			height: auto;
+		}
+
+		.overlay {
+  			position: relative;
+  			top: 0;
+  			bottom: 0;
+ 			left: 0;
+  			right: 0;
+  			height: 100%;
+  			width: 100%;
+  			opacity: 0;
+  			transition: .5s ease;
+  			background-color: #032638;
+		}
+
+		.button-game:hover .overlay {
+  			opacity: 0.9;
+		}
+
+		.button-game a {
+			text-decoration: none;
+		}
+
+		.text {
+  			color: white;
+  			opacity: 1;
+  			font-size: 1.4vw;
+  			position: relative;
+  			top: 50%;
+  			left: 50%;
+  			-webkit-transform: translate(-50%, -50%);
+  			-ms-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+  			text-align: center;
 		}
 
 		.footer{
@@ -501,7 +545,14 @@
 
 		<div class='catalog'>
 			<div class='crow'>
-				<div class='button-game'></div>
+				<div id='b-xmas' class='button-game'>
+					<a href="https://en-inopgames.blogspot.com">
+						<div class='overlay'>
+							<div class='text'>XMAS DELIVERIES<br /><br />Version: 1.00<br />Lanzamiento: 2015</div>
+						</div>
+					</a>
+				</div>
+
 				<div class='button-game'></div>
 				<div class='button-game'></div>
 				<div class='button-game'></div>

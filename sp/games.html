@@ -132,17 +132,36 @@
 		.crow{
 			display: flex;
 			flex-direction: row;
-			justify-content: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
 		}
 
 		.button-game{
-			width: 26vw;
 			height: 14vw;
 			margin: 0.5vw;
+			flex-basis: 23.87%;
 		}
 
 		#b-xmas {
 			background-image: url('../Data/Imgs/Button-xmas.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+		}
+
+		#b-db2 {
+			background-image: url('../Data/Imgs/Button-db2.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+		}
+
+		#b-bloxes {
+			background-image: url('../Data/Imgs/Button-bloxes.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+		}
+
+		#b-db {
+			background-image: url('../Data/Imgs/Button-db.png');
 			background-repeat: no-repeat;
 			background-size: 100% auto;
 		}
@@ -494,6 +513,16 @@
 				cursor: pointer;
 			}
 
+			.button-game{
+				height: 18.5vw;
+				margin: 0.5vw;
+				flex-basis: 32%;
+			}
+
+			.text{
+				font-size: 2vw;
+			}
+
 			h2{margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 14px;}
       	}
 
@@ -508,6 +537,16 @@
 			.mob-link-fb{top: 4vw;}
 			.mob-link-yt{top: 4vw;}
 			.mob-link-em{top: 4vw;}
+
+			.button-game{
+				height: 27.8vw;
+				margin: 0.5vw;
+				flex-basis: 48.5%;
+			}
+
+			.text{
+				font-size: 3vw;
+			}
       	}
 
       	/* Tablets (low-resolution) in devices */
@@ -544,6 +583,7 @@
 	<div class='main-content'>
 
 		<div class='catalog'>
+			<br />
 			<div class='crow'>
 				<div id='b-xmas' class='button-game'>
 					<a href="https://en-inopgames.blogspot.com">
@@ -553,9 +593,29 @@
 					</a>
 				</div>
 
-				<div class='button-game'></div>
-				<div class='button-game'></div>
-				<div class='button-game'></div>
+				<div id='b-db2' class='button-game'>
+					<a href="https://en-inopgames.blogspot.com">
+						<div class='overlay'>
+							<div class='text'>DESTRUCTIVE BALL 2<br /><br />Version: 1.01<br />Lanzamiento: 2011</div>
+						</div>
+					</a>
+				</div>
+
+				<div id='b-bloxes' class='button-game'>
+					<a href="https://en-inopgames.blogspot.com">
+						<div class='overlay'>
+							<div class='text'>BLOXES: IN THE TOWER<br /><br />Version: 1.00<br />Lanzamiento: 2011</div>
+						</div>
+					</a>					
+				</div>
+
+				<div id='b-db' class='button-game'>
+					<a href="https://en-inopgames.blogspot.com">
+						<div class='overlay'>
+							<div class='text'>DESTRUCTUVE BALL<br /><br />Version: 1.06<br />Lanzamiento: 2010</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 

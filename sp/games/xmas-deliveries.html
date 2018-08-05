@@ -347,6 +347,36 @@
     		cursor: pointer;
 		}
 
+		.download-button{
+			position:relative;
+			background-color: #307240;
+			color: #FFFFFF;
+			width: 34%;
+			font-family: calibri;
+			font-size: 1.5vw;
+			text-align: center;
+			margin-top: 1.5vw;
+			margin-bottom: 1.5vw;
+			margin-left: 32vw;
+			border: 1vw solid #307240;
+		}
+
+		.download-button:hover{
+			background-color: #0E875C;
+			border: 1vw solid #0E875C;
+			cursor: pointer;
+		}
+
+		.download-button:active{
+			background-color: #0E875C;
+			border: 1vw solid #0E875C;
+			cursor: pointer;
+		}
+
+		a#download{
+			text-decoration: none;
+		}
+
       	p {font-family:calibri; color:white;}
 
       	@media screen and (max-width: 1024px) {
@@ -566,6 +596,23 @@
 				flex-basis: 50%
 			}
 
+			.download-button{
+				width: 70%;
+				font-size: 3vw;
+				margin-left: 14vw;
+				margin-top: 4vw;
+				border: 1.8vw solid #307240;
+				font-weight: normal;
+			}
+
+			.download-button:hover{
+				border: 1.8vw solid #0E875C;
+			}
+
+			.download-button:active{
+				border: 1.8vw solid #0E875C;
+			}
+
 			h2{margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 14px;}
       	}
 
@@ -591,6 +638,20 @@
 				font-size: 3vw;
 				flex-basis: 100%
 			}
+
+			.download-button{
+				font-size: 4vw;
+				border: 2vw solid #307240;
+			}
+
+			.download-button:hover{
+				border: 2vw solid #0E875C;
+			}
+
+			.download-button:active{
+				border: 2vw solid #0E875C;
+			}
+
       	}
 
       	/* Tablets (low-resolution) in devices */
@@ -638,7 +699,7 @@
 		<div class='about-text'>
 			<h2>XMAS DELIVERIES</h2>
 
-			Descripción...
+			Xmas Deliveries es un juego similar al clásico Flappy Bird que consiste en controlar un trineo navideño con Santa Claus al mando que debe sobrevolar la ciudad en plena navidad. El objetivo del juego es simple: asegurar entregar la mayor cantidad de regalos posibles a través de las chimenéas y mantener un ritmo estable esquivando cada una de las azoteas y edificios que representan un obstáculo para todo el recorrido, y de esa forma tratar de alcanzar la mayor distancia posible. ¡Prueba batir tu record!
 			
 			<h3>Galería de imágenes</h3>
 
@@ -661,13 +722,15 @@
 			<h3>Información del producto</h3>
 
 			<div class="description">
-				<div class="column"><b>Tamaño:</b> 7,07 Mb</div>
+				<div class="column"><b>Tamaño:</b> 6,98 Mb</div>
 				<div class="column"><b>Versión:</b> 1.00</div>
 				<div class="column"><b>Lanzamiento:</b> Diciembre 2015</div>
 				<div class="column"><b>Género:</b> Acción</div>
 				<div class="column"><b>Idioma:</b> Inglés - Español</div>
 				<div class="column"></div>
 			</div>
+
+			<a href="https://www.dropbox.com/s/okmxmmzhbsk3riy/Xmas%20Deliveries.exe?dl=1" id="download"><div class='download-button'>DESCARGAR</div></a>
 
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 			<!-- The Modal -->

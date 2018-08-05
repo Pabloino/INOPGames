@@ -347,17 +347,21 @@
     		cursor: pointer;
 		}
 
+		.download-container{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin-top: 1.5vw;
+			margin-bottom: 1.5vw;
+		}
+
 		.download-button{
-			position:relative;
 			background-color: #307240;
 			color: #FFFFFF;
-			width: 34%;
+			width: 30vw;
 			font-family: calibri;
 			font-size: 1.5vw;
 			text-align: center;
-			margin-top: 1.5vw;
-			margin-bottom: 1.5vw;
-			margin-left: 29vw;
 			border: 1vw solid #307240;
 		}
 
@@ -596,11 +600,14 @@
 				flex-basis: 50%
 			}
 
+			.download-container{
+				margin-top: 3vw;
+				margin-bottom: 3vw;
+			}
+
 			.download-button{
-				width: 70%;
+				width: 46vw;
 				font-size: 3vw;
-				margin-left: 14vw;
-				margin-top: 4vw;
 				border: 1.8vw solid #307240;
 				font-weight: normal;
 			}
@@ -742,7 +749,9 @@
 				<div class="column"></div>
 			</div>
 
-			<a href="https://www.dropbox.com/s/bxuss8tio4aj9eo/DBall2.exe?dl=1" id="download"><div class='download-button'>DESCARGAR</div></a>
+			<div class="download-container">
+				<a href="https://www.dropbox.com/s/bxuss8tio4aj9eo/DBall2.exe?dl=1" id="download"><div class='download-button'>DESCARGAR</div></a>
+			</div>
 
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 			<!-- The Modal -->

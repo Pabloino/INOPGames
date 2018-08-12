@@ -21,9 +21,7 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="../Data/css/main.css" type="text/css" />
-	<script src="../Data/js/jquery.min.js"></script>
-	<script src="../Data/js/main.js"></script>
+	<link rel="stylesheet" href="../Data/src/jquery.paginate.css" />
 
 	<style>
 		body {
@@ -232,6 +230,10 @@
 		}
 
 		.copyright-mobile{display:none;}
+
+		.container { width: 800px; margin: 150px auto; }
+		.paginate { padding: 0; margin: 0; }
+		.paginate > li { list-style: none; padding: 10px 20px; border: 1px solid #ddd; margin: 10px 0; }
 
       	p {font-family:calibri; color:white;}
 
@@ -486,43 +488,45 @@
 
 	<div class='main-content'>
 
-		<div class="news-list">
+		<div class="container">
     		<h2>Blog de noticias</h2>
 
     		<div id="content" class="content">
-    			<div>
-    				<h3>Título de la noticia 1</h3>
-        			
-        			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        		</div>
-
-        		<div>
-    				<h3>Título de la noticia 2</h3>
-        			
-        			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        		</div>
-
-        		<div>
-    				<h3>Título de la noticia 3</h3>
-        			
-        			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        		</div>
-
-        		<!-- Añadir un div en caso que la página se complete, este sistema de paginación divide el contenido por bloques de divs -->
+    			<ul id="news-list">
+					<li>
+						<p>Software salesmen and used-car salesmen differ in that the latter know when they are lying.</p>
+					</li>
+					<li>
+						<p>Software salesmen and used-car salesmen differ in that the latter know when they are lying.</p>
+					</li>
+					<li>
+						<p>Software salesmen and used-car salesmen differ in that the latter know when they are lying.</p>
+					</li>
+					<li>
+						<p>Software salesmen and used-car salesmen differ in that the latter know when they are lying.</p>
+					</li>
+					<li>
+						<p>Software salesmen and used-car salesmen differ in that the latter know when they are lying.</p>
+					</li>
+				</ul>
    			</div>
-   			<br />
-    		<hr />
-    		<div class="pagination">
-        		<ul>
-            		<li><a style="cursor: pointer;" id="prev" class="prevnext">« Previous</a></li>
-            		<li><a style="cursor: pointer;" id="next" class="prevnext">Next »</a></li>
-        		</ul>
-        		<br />
-        		<div id="page_number" class="page_number">1</div>
-    		</div>
+
+			<script src="../Data/js/jquery-1.12.4.min.js"></script>
+			<script src="../Data/src/jquery.paginate.js"></script>
+
+			<script>
+				//call paginate
+				$('#news-list').paginate();
+			</script>
+
+			<script type="text/javascript">
+  				(function() {
+    				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  				})();
+			</script>
+		
 		</div>
 
 		<div class='background-mobile'>

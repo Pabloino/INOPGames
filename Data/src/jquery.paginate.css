@@ -29,7 +29,7 @@
 .paginate-pagination ul > li > a.page {
 	
 	display: block;
-	height: 30px;
+	height: 32px;
 	width: 30px;
 	text-align: center;
 	line-height: 30px;
@@ -39,6 +39,8 @@
 	cursor: pointer;
 	color: white;
 	background-color: #0D76B7;
+	font-size: 1.2vw;
+
 }
 
 .paginate-pagination ul > li > a.page:hover { opacity: 0.6; }

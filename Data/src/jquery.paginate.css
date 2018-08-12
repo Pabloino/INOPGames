@@ -33,15 +33,16 @@
 	width: 30px;
 	text-align: center;
 	line-height: 30px;
-	border: 1px solid #ddd;
+	border: 1px solid #0D76B7;
 	background: white;
 	text-decoration: none;
 	cursor: pointer;
-	
+	color: white;
+	background-color: #0D76B7;
 }
 
-.paginate-pagination ul > li > a.page:hover { opacity: 0.7; }
-.paginate-pagination ul > li > a.page.active { opacity: 0.7; cursor: default; }
+.paginate-pagination ul > li > a.page:hover { opacity: 0.6; }
+.paginate-pagination ul > li > a.page.active { opacity: 0.6; cursor: default; }
 
 .paginate-pagination ul > li > a.page-next.deactive,
-.paginate-pagination ul > li > a.page-prev.deactive { opacity: 0.7; cursor: default; }
+.paginate-pagination ul > li > a.page-prev.deactive { opacity: 0.6; cursor: default; }

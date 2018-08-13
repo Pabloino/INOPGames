@@ -21,8 +21,6 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="../Data/src/jquery.paginate.css" />
-
 	<style>
 		body {
 			background-color:#5B606A;
@@ -115,17 +113,6 @@
 			width: 100%;
 			top: 112px;
 			left: 0px;
-		}
-
-		.about-text{
-			font-family: calibri;
-			font-weight: normal;
-			color: black;
-			font-size: 1.4vw;
-			padding-top: 3vw;
-			padding-bottom: 5vw;
-			padding-left: 5vw;
-			padding-right: 5vw;
 		}
 
 		.footer{
@@ -243,7 +230,7 @@
 
 		.paginate > li { 
 			list-style: none; 
-			padding: 10px 20px; 
+			padding: 1.2vw 2vw; 
 			border: 1px solid #ACB4C4;; 
 			margin: 10px 0; 
 			background-color: #ACB4C4;
@@ -251,8 +238,46 @@
 			font-size: 1.3vw;
 		}
 
+		.paginate-pagination ul {
+			margin: 1vw 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.paginate-pagination ul:after {
+			content: ' ';
+			display: table;
+			clear: both;
+		}
+
+		.paginate-pagination ul > li {
+			float: left;
+			margin-right: 3px;
+		}
+
+		.paginate-pagination ul > li > a.page {
+			display: block;
+			height: 32px;
+			width: 30px;
+			text-align: center;
+			line-height: 30px;
+			border: 1px solid #0D76B7;
+			background: white;
+			text-decoration: none;
+			cursor: pointer;
+			color: white;
+			background-color: #0D76B7;
+			font-size: 16px;
+		}
+
+		.paginate-pagination ul > li > a.page:hover { opacity: 0.6; }
+		.paginate-pagination ul > li > a.page.active { opacity: 0.6; cursor: default; }
+
+		.paginate-pagination ul > li > a.page-next.deactive,
+		.paginate-pagination ul > li > a.page-prev.deactive { opacity: 0.6; cursor: default; }
+
       	p {font-family:calibri; color:white;}
-      	h3 {margin-top: 2px; margin-bottom: 8px;}
+      	h3 {margin-top: 0.1vw; margin-bottom: 0.6vw;}
 
       	@media screen and (max-width: 1024px) {
 
@@ -341,7 +366,7 @@
 		/* Tablets (low-resolution) in PC */
       	@media only screen and (max-width: 767px){
 
-      		.about-text{
+      		.container{
 				font-size: 3vw;
 			}
 
@@ -462,9 +487,8 @@
       	/* Mobiles in PC */
       	@media only screen and (max-width: 480px){
 
-      		.about-text{
+      		.container{
       			font-size: 3.8vw;
-      			padding-top: 5vw;
       		}
 			.copyright-mobile{font-size: 12px;}
 			.mob-link-fb{top: 4vw;}

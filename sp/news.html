@@ -219,11 +219,13 @@
 		.copyright-mobile{display:none;}
 
 		.container {
-			width: 93%; 
-			margin: 3vw auto;
 			font-family: calibri;
 			font-weight: normal;
 			font-size: 1.4vw;
+			padding-top: 2vw;
+			padding-bottom: 5vw;
+			padding-left: 5vw;
+			padding-right: 5vw;
 		}
 
 		.paginate { padding: 0; margin: 0;}
@@ -235,7 +237,7 @@
 			margin: 10px 0; 
 			background-color: #ACB4C4;
 			border-radius: 5px;
-			font-size: 1.3vw;
+			font-size: 1.4vw;
 		}
 
 		.paginate-pagination ul {
@@ -370,6 +372,11 @@
 				font-size: 3vw;
 			}
 
+			.paginate > li { 
+				font-size: 3vw;
+				padding: 2.5vw 4vw; 
+			}
+
 			.background-mobile{
 				background-image: url('../Data/Imgs/Background_footer_mobile.png'), linear-gradient(#ECF0F8, #5B6069);
 				background-repeat: no-repeat;
@@ -489,7 +496,12 @@
 
       		.container{
       			font-size: 3.8vw;
+      			padding-top: 3vw;
       		}
+      		.paginate > li { 
+				font-size: 3.8vw;
+				padding: 3vw 4vw; 
+			}
 			.copyright-mobile{font-size: 12px;}
 			.mob-link-fb{top: 4vw;}
 			.mob-link-yt{top: 4vw;}
@@ -510,6 +522,7 @@
       	@media only screen and (max-device-width: 480px){
       		
       		.copyright-mobile{top: 62vw;}
+      		.about-text{padding-top: 5vw;}
       	}
 
 	</style>

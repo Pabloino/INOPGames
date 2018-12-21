@@ -1,0 +1,152 @@
+.main-content{
+	position:absolute;
+	background-color: #ECF0F8;
+	width: 100%;
+	top: 112px;
+	left: 0px;
+}
+
+.catalog{
+	font-family: calibri;
+	font-weight: normal;
+	color: black;
+	font-size: 1.4vw;
+	padding-top: 3vw;
+	padding-bottom: 5vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.crow{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.button-game{
+	height: 14vw;
+	margin: 0.5vw;
+	flex-basis: 23.86%;
+}
+
+#b-xmas {
+	background-image: url('../Imgs/Button-xmas.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+#b-db2 {
+	background-image: url('../Imgs/Button-db2.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+#b-bloxes {
+	background-image: url('../Imgs/Button-bloxes.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+#b-db {
+	background-image: url('../Imgs/Button-db.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.image{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #032638;
+}
+
+.button-game:hover .overlay {
+	opacity: 0.9;
+}
+
+.button-game a {
+	text-decoration: none;
+}
+
+.text {
+	color: white;
+	opacity: 1;
+	font-size: 1.4vw;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+@media screen and (max-width: 1024px) {  			
+
+	.main-content {top: 80px;}
+
+	.button-game{
+		height: 13.8vw;
+		flex-basis: 23.80%;
+	}
+}
+
+/* Tablets (low-resolution) in PC */
+@media only screen and (max-width: 767px){
+
+	.catalog{
+		font-size: 3vw;
+	}
+
+	.button-game{
+		height: 27.6vw;
+		flex-basis: 48.5%;
+	}
+
+	.text{
+		font-size: 3vw;
+	}
+}
+
+/* Mobiles in PC */
+@media only screen and (max-width: 480px){
+
+	.catalog{
+		font-size: 3.8vw;
+		padding-top: 5vw;
+	}
+
+	.button-game{
+		height: 51vw;
+		flex-basis: 98.5%;
+		margin: 3vw;;
+	}
+
+	.text{
+		font-size: 5vw;
+	}
+}
+
+/* Mobiles in devices */
+@media only screen and (max-device-width: 480px){
+
+	.button-game{
+		height: 55vw;
+	}
+}

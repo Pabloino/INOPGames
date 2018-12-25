@@ -34,25 +34,25 @@
 }
 
 #b-xmas {
-	background-image: url('../Imgs/Button-xmas.png');
+	background-image: url('../imgs/button-xmas.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
 
 #b-db2 {
-	background-image: url('../Imgs/Button-db2.png');
+	background-image: url('../imgs/button-db2.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
 
 #b-bloxes {
-	background-image: url('../Imgs/Button-bloxes.png');
+	background-image: url('../imgs/button-bloxes.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
 
 #b-db {
-	background-image: url('../Imgs/Button-db.png');
+	background-image: url('../imgs/button-db.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }

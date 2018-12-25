@@ -6,36 +6,79 @@
 	<title>INOPGames</title>
 
 	<!-- Chrome, Safari, IE -->
-	<link href='../Data/Imgs/Logo_ico16.png' rel='shortcut icon' sizes='16x16'/>
-	<link href='../Data/Imgs/Logo_ico32.png' rel='shortcut icon' sizes='32x32'/>
-	<link href='../Data/Imgs/Logo_ico48.png' rel='shortcut icon' sizes='48x48'/>
-	<link href='../Data/Imgs/Logo_ico64.png' rel='shortcut icon' sizes='64x64'/>
-	<link href='../Data/Imgs/Logo_ico128.png' rel='shortcut icon' sizes='128x128'/>
+	<link href='../data/imgs/logo_ico16.png' rel='shortcut icon' sizes='16x16'/>
+	<link href='../data/imgs/logo_ico32.png' rel='shortcut icon' sizes='32x32'/>
+	<link href='../data/imgs/logo_ico48.png' rel='shortcut icon' sizes='48x48'/>
+	<link href='../data/imgs/logo_ico64.png' rel='shortcut icon' sizes='64x64'/>
+	<link href='../data/imgs/logo_ico128.png' rel='shortcut icon' sizes='128x128'/>
 
 	<!-- Firefox, Opera  -->
-	<link href='../Data/Imgs/Logo_ico16.png' rel='icon' sizes='16x16'/>
-	<link href='../Data/Imgs/Logo_ico32.png' rel='icon' sizes='32x32'/>
-	<link href='../Data/Imgs/Logo_ico48.png' rel='icon' sizes='48x48'/>
-	<link href='../Data/Imgs/Logo_ico64.png' rel='icon' sizes='64x64'/>
-	<link href='../Data/Imgs/Logo_ico128.png' rel='icon' sizes='128x128'/>
+	<link href='../data/imgs/logo_ico16.png' rel='icon' sizes='16x16'/>
+	<link href='../data/Imgs/logo_ico32.png' rel='icon' sizes='32x32'/>
+	<link href='../data/imgs/logo_ico48.png' rel='icon' sizes='48x48'/>
+	<link href='../data/imgs/logo_ico64.png' rel='icon' sizes='64x64'/>
+	<link href='../data/imgs/logo_ico128.png' rel='icon' sizes='128x128'/>
 	
-	<link href='../Data/css/base.css' rel='stylesheet'/>
-	<link href='../Data/css/index.css' rel='stylesheet'/>
+	<link href='../data/css/base.css' rel='stylesheet'/>
+	<link href='../data/css/index.css' rel='stylesheet'/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
+	<script src="../data/lang/lang.js"></script>
 	<div class='inop-logo'></div>
 	<div class="topnav" id="myTopnav">	
-		<a class="actived">INICIO</a>
-    	<a href="games.html">JUEGOS</a>
-		<a href="news.html">NOTICIAS</a>
-    	<a href="about.html">SOBRE MÍ</a>
-    	<a href="https://en-inopgames.blogspot.com" id="lang" title='English version' style="padding: 4px 0px 0px 0px;">EN</a>
-    	<a href="https://en-inopgames.blogspot.com" class="langmob" title='English version'>ENGLISH VERSION</a>
+		<a id="home_menu" class="actived"></a>
+    	<a id="games_menu" href="games.html"></a>
+		<a id="news_menu" href="news.html"></a>
+    	<a id="about_menu" href="about.html"></a>
+    	<a id="lang" style="padding: 4px 0px 0px 0px;"></a>
+    	<a id="lang_mobile" class="langmob"></a>
     	<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()"></a>
 	</div>
+
+	<script type="text/javascript">
+		function setLanguage(lang_id){
+			var num = lang_id;
+
+			document.getElementById("home_menu").innerHTML = obj.language[num].home;
+			document.getElementById("games_menu").innerHTML = obj.language[num].games;
+			document.getElementById("news_menu").innerHTML = obj.language[num].news;
+			document.getElementById("about_menu").innerHTML = obj.language[num].about;
+			document.getElementById("lang").innerHTML = obj.language[num].lang;
+			document.getElementById("lang_mobile").innerHTML = obj.language[num].langMobile;
+			document.getElementById("lang").title = obj.language[num].langTitle;
+
+			if(num == 0){
+				document.getElementById("lang").setAttribute('href',"javascript:goPage('index.html','es')");
+				document.getElementById("lang_mobile").setAttribute('href',"javascript:goPage('index.html','es')");
+			} else {
+				document.getElementById("lang").setAttribute('href',"javascript:goPage('index.html','en')");
+				document.getElementById("lang_mobile").setAttribute('href',"javascript:goPage('index.html','en')");
+			}
+		}
+
+		function extractLangFromPage(){
+			var parameters = location.search.substring(1);
+			var langValue = parameters.split("=");
+
+			if(langValue[1] === "en"){
+				setLanguage(0);
+			} else {
+				setLanguage(1);
+			}
+		}
+
+		extractLangFromPage();
+	</script>
+
+	<script type="text/javascript">
+		function goPage(page, language){
+			page += "?locale=" + language;
+			location.href = page;
+		}
+	</script>
 
 	<div class='slideshow-container'>
 		<div class='box-container'>

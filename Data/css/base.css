@@ -62,14 +62,14 @@ a#lang:hover {
 	cursor:pointer;
 }
 
-.langmob {display: none;}
+.langmob {display: none; cursor:pointer;}
 
 .topnav .icon {
 	display: none;
 }
 
 .inop-logo{
-	background-image: url('../Imgs/Logo_index_page.png');
+	background-image: url('../imgs/logo_index_page.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	position:absolute;
@@ -94,7 +94,7 @@ img {vertical-align: middle;}
 	padding-bottom: 2.6vw;
 	padding-left: 6vw;
 	padding-right: 6vw;
-	background-image: url('../Imgs/Background_footer.png');
+	background-image: url('../imgs/background_footer.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
@@ -107,7 +107,7 @@ img {vertical-align: middle;}
 }
 
 .link-fb{
-	background-image: url('../Imgs/Button-fb.png');
+	background-image: url('../imgs/button-fb.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	top: 0px;
@@ -119,21 +119,21 @@ img {vertical-align: middle;}
 }
 
 .link-fb:hover{
-	background-image: url('../Imgs/Button-fb-select.png');
+	background-image: url('../imgs/button-fb-select.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	cursor: pointer;
 }
 
 .link-fb:active{
-	background-image: url('../Imgs/Button-fb-select.png');
+	background-image: url('../imgs/button-fb-select.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	cursor: pointer;
 }
 
 .link-yt{
-	background-image: url('../Imgs/Button-yt.png');
+	background-image: url('../imgs/button-yt.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	top: 0px;
@@ -145,21 +145,21 @@ img {vertical-align: middle;}
 }
 
 .link-yt:hover{
-	background-image: url('../Imgs/Button-yt-select.png');
+	background-image: url('../imgs/button-yt-select.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	cursor: pointer;
 }
 
 .link-yt:active{
-	background-image: url('../Imgs/Button-yt-select.png');
+	background-image: url('../imgs/button-yt-select.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	cursor: pointer;
 }
 
 .link-em{
-	background-image: url('../Imgs/Button-email.png');
+	background-image: url('../imgs/button-email.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	top: 0px;
@@ -171,14 +171,14 @@ img {vertical-align: middle;}
 }
 
 .link-em:hover{
-	background-image: url('../Imgs/Button-email-select.png');
+	background-image: url('../imgs/button-email-select.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	cursor: pointer;
 }
 
 .link-em:active{
-	background-image: url('../Imgs/Button-email-select.png');
+	background-image: url('../imgs/button-email-select.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	cursor: pointer;
@@ -219,7 +219,7 @@ p {font-family:calibri; color:white;}
 			padding-bottom: 4px;
 			padding-left: 10px;
 			padding-right: 10px;
-			background-image: url('../Imgs/nav-icon.png');
+			background-image: url('../imgs/nav-icon.png');
 			background-repeat: no-repeat;
 			background-size: auto auto;
 			background-position: center;
@@ -251,7 +251,7 @@ p {font-family:calibri; color:white;}
 		}
 
 		.inop-logo{
-			background-image: url('../Imgs/Logo_index_page_mob.png');
+			background-image: url('../imgs/logo_index_page_mob.png');
 			background-repeat: no-repeat;
 			background-size: auto auto;
 			position:absolute;
@@ -274,7 +274,7 @@ p {font-family:calibri; color:white;}
 @media only screen and (max-width: 767px){
 
 	.background-mobile{
-		background-image: url('../Imgs/Background_footer_mobile.png'), linear-gradient(#ECF0F8, #5B6069);
+		background-image: url('../imgs/background_footer_mobile.png'), linear-gradient(#ECF0F8, #5B6069);
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		background-position: top;
@@ -307,7 +307,7 @@ p {font-family:calibri; color:white;}
 	}
 
 	.mob-link-fb{
-		background-image: url('../Imgs/Button-fb.png');
+		background-image: url('../imgs/button-fb.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		top: 3vw;
@@ -319,21 +319,21 @@ p {font-family:calibri; color:white;}
 	}
 
 	.mob-link-fb:hover{
-		background-image: url('../Imgs/Button-fb-select.png');
+		background-image: url('../imgs/button-fb-select.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		cursor: pointer;
 	}
 
 	.mob-link-fb:active{
-		background-image: url('../Imgs/Button-fb-select.png');
+		background-image: url('../imgs/button-fb-select.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		cursor: pointer;
 	}
 
 	.mob-link-yt{
-		background-image: url('../Imgs/Button-yt.png');
+		background-image: url('../imgs/button-yt.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		top: 3vw;
@@ -345,21 +345,21 @@ p {font-family:calibri; color:white;}
 	}
 
 	.mob-link-yt:hover{
-		background-image: url('../Imgs/Button-yt-select.png');
+		background-image: url('../imgs/button-yt-select.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		cursor: pointer;
 	}
 
 	.mob-link-yt:active{
-		background-image: url('../Imgs/Button-yt-select.png');
+		background-image: url('../imgs/button-yt-select.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		cursor: pointer;
 	}
 
 	.mob-link-em{
-		background-image: url('../Imgs/Button-email.png');
+		background-image: url('../imgs/button-email.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		top: 3vw;
@@ -371,14 +371,14 @@ p {font-family:calibri; color:white;}
 	}
 
 	.mob-link-em:hover{
-		background-image: url('../Imgs/Button-email-select.png');
+		background-image: url('../imgs/button-email-select.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		cursor: pointer;
 	}
 
 	.mob-link-em:active{
-		background-image: url('../Imgs/Button-email-select.png');
+		background-image: url('../imgs/button-email-select.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		cursor: pointer;

@@ -16,7 +16,7 @@
 
 /* Xmax Deliveries */
 .img-xmas{
-	background: url('../Imgs/Slideshow-xmas.png');
+	background: url('../imgs/slideshow-xmas.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -72,7 +72,7 @@
 
 /* Bloxes */
 .img-bloxes{
-	background: url('../Imgs/Slideshow-bloxes.png');
+	background: url('../imgs/slideshow-bloxes.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -128,7 +128,7 @@
 
 /* Dball */
 .img-db{
-	background: url('../Imgs/Slideshow-db2.png');
+	background: url('../imgs/slideshow-db2.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -400,7 +400,7 @@ h3 {font-family:calibri; margin: 0.6vw;}
 	}
 
 	.img-xmas{
-		background: url('../Imgs/Slideshow-mob-xmas.png');
+		background: url('../imgs/slideshow-mob-xmas.png');
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 		background-color: #123F49;
@@ -423,7 +423,7 @@ h3 {font-family:calibri; margin: 0.6vw;}
 	}
 
 	.img-bloxes{
-		background: url('../Imgs/Slideshow-mob-bloxes.png');
+		background: url('../imgs/slideshow-mob-bloxes.png');
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 		background-color: #123F49;
@@ -446,7 +446,7 @@ h3 {font-family:calibri; margin: 0.6vw;}
 	}
 
 	.img-db{
-		background: url('../Imgs/Slideshow-mob-db2.png');
+		background: url('../imgs/slideshow-mob-db2.png');
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 		background-color: #123F49;

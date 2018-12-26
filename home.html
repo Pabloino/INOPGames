@@ -3,44 +3,23 @@
 <html>
 
 <head> 
-	<title>INOPGames</title>
-
-	<!-- Chrome, Safari, IE -->
-	<link href='data/imgs/logo_ico16.png' rel='shortcut icon' sizes='16x16'/>
-	<link href='data/imgs/logo_ico32.png' rel='shortcut icon' sizes='32x32'/>
-	<link href='data/imgs/logo_ico48.png' rel='shortcut icon' sizes='48x48'/>
-	<link href='data/imgs/logo_ico64.png' rel='shortcut icon' sizes='64x64'/>
-	<link href='data/imgs/logo_ico128.png' rel='shortcut icon' sizes='128x128'/>
-
-	<!-- Firefox, Opera  -->
-	<link href='data/imgs/logo_ico16.png' rel='icon' sizes='16x16'/>
-	<link href='data/Imgs/logo_ico32.png' rel='icon' sizes='32x32'/>
-	<link href='data/imgs/logo_ico48.png' rel='icon' sizes='48x48'/>
-	<link href='data/imgs/logo_ico64.png' rel='icon' sizes='64x64'/>
-	<link href='data/imgs/logo_ico128.png' rel='icon' sizes='128x128'/>
-	
-	<link href='data/css/base.css' rel='stylesheet'/>
+	<script src="data/js/loadHead.js"></script>
+	<script src="data/js/loadBase.js"></script>
+	<script type="text/javascript">
+		loadBase(false);
+		loadHead(false);
+	</script>
 	<link href='data/css/index.css' rel='stylesheet'/>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
 	<script src="data/lang/lang.js"></script>
-	<script src="data/js/extLangFromPage.js"></script>
+	<script src="data/js/loadLang.js"></script>
 	<script src="data/js/setLang.js"></script>
 	<script src="data/js/goPage.js"></script>
 
-	<div class='inop-logo'></div>
-	<div class="topnav" id="myTopnav">	
-		<a id="home_menu" class="actived"></a>
-    	<a id="games_menu" href="games.html"></a>
-		<a id="news_menu" href="news.html"></a>
-    	<a id="about_menu" href="about.html"></a>
-    	<a id="lang" style="padding: 4px 0px 0px 0px;"></a>
-    	<a id="lang_mobile" class="langmob"></a>
-    	<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()"></a>
-	</div>
+	<script src="data/js/header.js"></script>
+	<script type="text/javascript">header("home", false);</script>
 
 	<div class='slideshow-container'>
 		<div class='box-container'>
@@ -100,48 +79,8 @@
 		</div>
 	</div>
 
-	<script>
-		var time;
-		var slideIndex = 0;
-		var msec = 8000;
-		showSlides(slideIndex);
-
-		function currentSlide(n) {
-			clearTimeout(time);
-    		n--;
-			setTimeout(showSlides(slideIndex = n), msec);
-		}
-
-		function showSlides(n) {
-    		var i;
-    		var slides = document.getElementsByClassName("mySlides");
-    		var dots = document.getElementsByClassName("dot");
-    		if (n > slides.length) {slideIndex = 1}    
-  			if (n < 1) {slideIndex = slides.length}
-    		for (i = 0; i < slides.length; i++) {
-       			slides[i].style.display = "none";  
-    		}
-    		slideIndex++;
-    		if (slideIndex > slides.length) {slideIndex = 1}    
-    		for (i = 0; i < dots.length; i++) {
-       			dots[i].className = dots[i].className.replace(" active", "");
-    		}
-    		slides[slideIndex-1].style.display = "block";  
-    		dots[slideIndex-1].className += " active";
-    		time = setTimeout(showSlides, msec);
-		}
-
-		function myFunction() {
-    		var x = document.getElementById("myTopnav");
-    		if (x.className === "topnav") {
-				x.className += " responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-	</script>
-
-	<script type="text/javascript">extractLangFromPage();</script>
+	<script src="data/js/showslide.js"></script>
+	<script type="text/javascript">loadLanguage("home",false);</script>
 
 </body>
 

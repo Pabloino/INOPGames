@@ -3,39 +3,23 @@
 <html>
 
 <head> 
-	<title>INOPGames</title>
-
-	<!-- Chrome, Safari, IE -->
-	<link href='data/imgs/logo_ico16.png' rel='shortcut icon' sizes='16x16'/>
-	<link href='data/imgs/logo_ico32.png' rel='shortcut icon' sizes='32x32'/>
-	<link href='data/imgs/logo_ico48.png' rel='shortcut icon' sizes='48x48'/>
-	<link href='data/imgs/logo_ico64.png' rel='shortcut icon' sizes='64x64'/>
-	<link href='data/imgs/logo_ico128.png' rel='shortcut icon' sizes='128x128'/>
-
-	<!-- Firefox, Opera  -->
-	<link href='data/imgs/logo_ico16.png' rel='icon' sizes='16x16'/>
-	<link href='data/Imgs/logo_ico32.png' rel='icon' sizes='32x32'/>
-	<link href='data/imgs/logo_ico48.png' rel='icon' sizes='48x48'/>
-	<link href='data/imgs/logo_ico64.png' rel='icon' sizes='64x64'/>
-	<link href='data/imgs/logo_ico128.png' rel='icon' sizes='128x128'/>
-
-	<link href='data/css/base.css' rel='stylesheet'/>
+	<script src="data/js/loadHead.js"></script>
+	<script src="data/js/loadBase.js"></script>
+	<script type="text/javascript">
+		loadBase(false);
+		loadHead(false);
+	</script>
 	<link href='data/css/about.css' rel='stylesheet'/>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
-	<div class='inop-logo'></div>
-	<div class="topnav" id="myTopnav">	
-		<a href="home.html">INICIO</a>
-    	<a href="games.html">JUEGOS</a>
-		<a href="news.html">NOTICIAS</a>
-    	<a class="actived">SOBRE MÍ</a>
-    	<a href="https://en-inopgames.blogspot.com" id="lang" title='English version' style="padding: 4px 0px 0px 0px;">EN</a>
-    	<a href="https://en-inopgames.blogspot.com" class="langmob" title='English version'>ENGLISH VERSION</a>
-    	<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()"></a>
-	</div>
+	<script src="data/lang/lang.js"></script>
+	<script src="data/js/loadLang.js"></script>
+	<script src="data/js/setLang.js"></script>
+	<script src="data/js/goPage.js"></script>
+
+	<script src="data/js/header.js"></script>
+	<script type="text/javascript">header("about", false);</script>
 
 	<div class='main-content'>
 
@@ -85,17 +69,8 @@
 		</div>
 	</div>
 
-
-	<script>
-		function myFunction() {
-    		var x = document.getElementById("myTopnav");
-    		if (x.className === "topnav") {
-				x.className += " responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-	</script>
+	<script type="text/javascript">loadLanguage("about",false);</script>
+	<script src="data/js/responsive.js"></script>
 
 </body>
 

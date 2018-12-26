@@ -3,39 +3,23 @@
 <html>
 
 <head> 
-	<title>INOPGames</title>
-
-	<!-- Chrome, Safari, IE -->
-	<link href='../data/imgs/logo_ico16.png' rel='shortcut icon' sizes='16x16'/>
-	<link href='../data/imgs/logo_ico32.png' rel='shortcut icon' sizes='32x32'/>
-	<link href='../data/imgs/logo_ico48.png' rel='shortcut icon' sizes='48x48'/>
-	<link href='../data/imgs/logo_ico64.png' rel='shortcut icon' sizes='64x64'/>
-	<link href='../data/imgs/logo_ico128.png' rel='shortcut icon' sizes='128x128'/>
-
-	<!-- Firefox, Opera  -->
-	<link href='../data/imgs/logo_ico16.png' rel='icon' sizes='16x16'/>
-	<link href='../data/imgs/logo_ico32.png' rel='icon' sizes='32x32'/>
-	<link href='../data/imgs/logo_ico48.png' rel='icon' sizes='48x48'/>
-	<link href='../data/imgs/logo_ico64.png' rel='icon' sizes='64x64'/>
-	<link href='../data/imgs/logo_ico128.png' rel='icon' sizes='128x128'/>
-
-	<link href='../data/css/base.css' rel='stylesheet'/>
+	<script src="../data/js/loadHead.js"></script>
+	<script src="../data/js/loadBase.js"></script>
+	<script type="text/javascript">
+		loadBase(true);
+		loadHead(true);
+	</script>
 	<link href='../data/css/game_section.css' rel='stylesheet'/>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
-	<div class='inop-logo'></div>
-	<div class="topnav" id="myTopnav">	
-		<a href="../home.html">INICIO</a>
-    	<a href="../games.html">JUEGOS</a>
-		<a href="../news.html">NOTICIAS</a>
-    	<a href="../about.html">SOBRE MÍ</a>
-    	<a href="https://en-inopgames.blogspot.com" id="lang" title='English version' style="padding: 4px 0px 0px 0px;">EN</a>
-    	<a href="https://en-inopgames.blogspot.com" class="langmob" title='English version'>ENGLISH VERSION</a>
-    	<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()"></a>
-	</div>
+	<script src="../data/lang/lang.js"></script>
+	<script src="../data/js/loadLang.js"></script>
+	<script src="../data/js/setLang.js"></script>
+	<script src="../data/js/goPage.js"></script>
+
+	<script src="../data/js/header.js"></script>
+	<script type="text/javascript">header("games", true);</script>
 
 	<div class='main-content'>
 
@@ -114,42 +98,9 @@
 		</div>
 	</div>
 
-
-	<script>
-		function myFunction() {
-    		var x = document.getElementById("myTopnav");
-    		if (x.className === "topnav") {
-				x.className += " responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-
-		// Get the modal
-		var modal = document.getElementById('myModal');
-
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = $('.myImg');
-		var modalImg = $("#img01");
-		var captionText = document.getElementById("caption");
-		$('.myImg').click(function(){
-    		modal.style.display = "block";
-    		var newSrc = this.src;
-    		modalImg.attr('src', newSrc);
-    		captionText.innerHTML = this.alt;
-		});
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-  			modal.style.display = "none";
-		}
-	</script>
-
-
-
+	<script src="../data/js/gallery_imgs.js"></script>
+	<script type="text/javascript">loadLanguage("games",true);</script>
+	<script src="../data/js/responsive.js"></script>
 </body>
 
 </html>

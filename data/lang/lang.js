@@ -42,6 +42,22 @@ var lang_text = '{' +
 			' "news_button" : "MÁS NOTICIAS", ' + 
 			' "download_button" : "DESCARGAR" ' + 
 		'}' + 
+	'],' +
+' "footer" : [' +
+		'{' +
+			' "copyright" : "(c) 2019 - INOPGAMES. Registered trademark by Pablo Inoriza.", ' + 
+			' "copyright_mobile" : "(c) 2019 - INOPGAMES.<br />Registered trademark by Pablo Inoriza.", ' + 
+			' "facebookTitle" : "Follow me on Facebook", ' + 
+			' "youtubeTitle" : "Subscribe to me on Youtube", ' + 
+			' "contactTitle" : "Contact" ' + 
+		'},' +
+		'{' +
+			' "copyright" : "(c) 2019 - INOPGAMES. Marca registrada por Pablo Inoriza.", ' + 
+			' "copyright_mobile" : "(c) 2019 - INOPGAMES.<br />Marca registrada por Pablo Inoriza.", ' + 
+			' "facebookTitle" : "Seguime en Facebook", ' + 
+			' "youtubeTitle" : "Suscribete a mi canal de Youtube", ' + 
+			' "contactTitle" : "Contacto" ' + 
+		'}' +
 	']' +
 '}';
 

@@ -10,13 +10,23 @@ function setLanguage(lang_id, currentPage, subdirectory){
 	var num = lang_id;
 
 	//Header
-	document.getElementById("home_menu").innerHTML = obj.header[num].home;
-	document.getElementById("games_menu").innerHTML = obj.header[num].games;
-	document.getElementById("news_menu").innerHTML = obj.header[num].news;
-	document.getElementById("about_menu").innerHTML = obj.header[num].about;
-	document.getElementById("lang").innerHTML = obj.header[num].lang;
-	document.getElementById("lang_mobile").innerHTML = obj.header[num].langMobile;
-	document.getElementById("lang").title = obj.header[num].langTitle;
+	if(!(currentPage === "index")){
+		document.getElementById("home_menu").innerHTML = obj.header[num].home;
+		document.getElementById("games_menu").innerHTML = obj.header[num].games;
+		document.getElementById("news_menu").innerHTML = obj.header[num].news;
+		document.getElementById("about_menu").innerHTML = obj.header[num].about;
+		document.getElementById("lang").innerHTML = obj.header[num].lang;
+		document.getElementById("lang_mobile").innerHTML = obj.header[num].langMobile;
+		document.getElementById("lang").title = obj.header[num].langTitle;
+
+		if(num == 0){
+			document.getElementById("lang").setAttribute('href',"javascript:goPage('"+cd+".html','es')");
+			document.getElementById("lang_mobile").setAttribute('href',"javascript:goPage('"+cd+".html','es')");
+		} else {
+			document.getElementById("lang").setAttribute('href',"javascript:goPage('"+cd+".html','en')");
+			document.getElementById("lang_mobile").setAttribute('href',"javascript:goPage('"+cd+".html','en')");
+		}
+	}
 
 	//Slider
 	if(currentPage === "home"){
@@ -28,11 +38,12 @@ function setLanguage(lang_id, currentPage, subdirectory){
 		document.getElementById("button-slide3").innerHTML = obj.buttons[num].read_button;
 	}
 
-	if(num == 0){
-		document.getElementById("lang").setAttribute('href',"javascript:goPage('"+cd+".html','es')");
-		document.getElementById("lang_mobile").setAttribute('href',"javascript:goPage('"+cd+".html','es')");
-	} else {
-		document.getElementById("lang").setAttribute('href',"javascript:goPage('"+cd+".html','en')");
-		document.getElementById("lang_mobile").setAttribute('href',"javascript:goPage('"+cd+".html','en')");
+	//Footer
+	document.getElementById("copyright-txt").innerHTML = obj.footer[num].copyright;
+	document.getElementById("copyright-txt-mob").innerHTML = obj.footer[num].copyright_mobile;
+	for(var i = 0; i < document.getElementsByClassName("face-txt").length; i++){
+		document.getElementsByClassName("face-txt")[i].title = obj.footer[num].facebookTitle;
+		document.getElementsByClassName("yt-txt")[i].title = obj.footer[num].youtubeTitle;
+		document.getElementsByClassName("contact-txt")[i].title = obj.footer[num].contactTitle;
 	}
 }

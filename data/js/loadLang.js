@@ -2,6 +2,10 @@ function getLang(){
 	var parameters = location.search.substring(1);
 	var langValue = parameters.split("=");
 
+	if(typeof langValue[1] === "undefined"){
+		langValue[1] = "en";
+	}
+
 	return langValue[1];
 }
 

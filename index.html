@@ -395,6 +395,9 @@
 </head>
 
 <body>
+	<script src="data/lang/lang.js"></script>
+	<script src="data/js/loadLang.js"></script>
+	<script src="data/js/setLang.js"></script>
 	<script src="data/js/goPage.js"></script>
 	<div class='inop-logo'>
 		<div class='panel-lang'>
@@ -406,23 +409,17 @@
 			<a class='button' href="javascript:goPage('home.html','es')" style="text-decoration:none">SPANISH</a>
 			<div class='line'></div>
 		</div>
-		<div class='background-mobile'>
-			<div class='copyright-mobile'>(c) 2018 - INOPGAMES.<br />Registered trademark by Pablo Inoriza.
-				<div class='links'>
-					<a href='https://www.facebook.com/INOPGames-215488275151843/' target='_blank' title='Follow me on Facebook'><div class='mob-link-fb'></div></a>
-					<a href='https://www.youtube.com/channel/UCBTZnYbJ7q9hWRyvfWAAKog' target='_blank' title='Subscribe to me on Youtube'><div class='mob-link-yt'></div></a>
-					<a href='' target='_blank' title='Contact (Not available for now)'><div class='mob-link-em'></div></a>
-				</div>
-			</div>
-		</div>
+		<script src="data/js/footer.js"></script>
+		<script type="text/javascript">
+			footerMobile("inop-logo",false,true);
+		</script>
 	</div>
 
-	<div class='footer'>
-		<div class='copyright'>(c) 2018 - INOPGAMES. Registered trademark by Pablo Inoriza.</div>
-		<a href='' title='Contact (Not available for now)'><div class='link-em'></div></a>
-		<a href='https://www.youtube.com/channel/UCBTZnYbJ7q9hWRyvfWAAKog' target='_blank' title='Subscribe to me on Youtube'><div class='link-yt'></div></a>
-		<a href='https://www.facebook.com/INOPGames-215488275151843/' target='_blank' title='Follow me on Facebook'><div class='link-fb'></div></a>
-	</div>
+	<script type="text/javascript">
+		footer("body",false,true);
+	</script>
+
+	<script type="text/javascript">loadLanguage("index",false);</script>
 
 </body>
 

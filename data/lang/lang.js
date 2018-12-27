@@ -58,6 +58,18 @@ var lang_text = '{' +
 			' "youtubeTitle" : "Suscribete a mi canal de Youtube", ' + 
 			' "contactTitle" : "Contacto" ' + 
 		'}' +
+	'],' +
+' "buttons" : [' +
+		'{' +
+			' "read_button" : "READ MORE", ' + 
+			' "news_button" : "MORE NEWS", ' + 
+			' "download_button" : "DOWNLOAD" ' + 
+		'},' +
+		'{' +
+			' "read_button" : "LEER MÁS", ' + 
+			' "news_button" : "MÁS NOTICIAS", ' + 
+			' "download_button" : "DESCARGAR" ' + 
+		'}' + 
 	']' +
 '}';
 

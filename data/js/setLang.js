@@ -38,6 +38,11 @@ function setLanguage(lang_id, currentPage, subdirectory){
 		document.getElementById("button-slide3").innerHTML = obj.buttons[num].read_button;
 	}
 
+	//Games
+	if(currentPage === "games"){
+		
+	}
+
 	//Footer
 	document.getElementById("copyright-txt").innerHTML = obj.footer[num].copyright;
 	document.getElementById("copyright-txt-mob").innerHTML = obj.footer[num].copyright_mobile;

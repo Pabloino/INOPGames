@@ -74,5 +74,29 @@ var lang_games_text = '{' +
             ' "platform" : "<b>Platforma:</b> Windows", ' + 
 			' "info" : "Una caja verde se encuentra atrapada en lo alto de una torre y necesita tu ayuda para escapar. Tu misión consiste en guiar dicha caja hacia la salida de cada habitación, pero para ello deberás empujar otras cajas y dominar los obstáculos que impiden el paso a la meta. ¿Te animás a resolver todos los puzzles?" ' +
 		'}' +
+    '],' +
+' "dball" : [' +
+        '{' +
+            ' "catalog" : "DESTRUCTIVE BALL 2<br /><br />Version: 1.06<br />Release: 2010", ' + 
+            ' "version" : "<b>Version:</b> 1.06", ' + 
+            ' "size" : "<b>Size:</b> 20,7 Mb", ' + 
+            ' "release" : "<b>Release:</b> June 2010", ' + 
+            ' "genre" : "<b>Genre:</b> Breakout", ' + 
+            ' "language" : "<b>Language:</b> English - Spanish", ' + 
+            ' "platform" : "<b>Platform:</b> Windows", ' + 
+            ' "info" : "Destructive Ball is a breakout type game whose objective is to destroy all the bricks of each level with the ball. For this you must master the control of the platform to catch the ball and avoid certain obstacles that may affect its handling. The game has several levels of different styles grouped in different areas offering a more dynamic and attractive experience." ' +
+        '},' +
+        '{' +
+            ' "catalog" : "DESTRUCTIVE BALL<br /><br />Version: 1.06<br />Lanzamiento: 2010", ' + 
+            ' "version" : "<b>Versión:</b> 1.06", ' + 
+            ' "size" : "<b>Tamaño:</b> 20,7 Mb", ' + 
+            ' "release" : "<b>Lanzamiento:</b> Junio 2010", ' + 
+            ' "genre" : "<b>Género:</b> Breakout", ' + 
+            ' "language" : "<b>Idioma:</b> Inglés - Español", ' + 
+            ' "platform" : "<b>Platforma:</b> Windows", ' + 
+            ' "info" : "Destructive Ball es un juego del tipo breakout cuyo objetivo es destruir con la bola todos los ladrillos de cada nivel. Para ello debe dominar el control de la plataforma para atrapar la bola y esquivar ciertos obstáculos que pueden afectar su manejo. El juego cuenta con varios niveles de diferentes estilos agrupados en distintas zonas ofreciendo una experiencia más dinámica y atractiva." ' +
+        '}' +
     ']' +
 '}';
+
+var obj_game = JSON.parse(lang_games_text);

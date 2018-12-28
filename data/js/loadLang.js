@@ -9,10 +9,18 @@ function getLang(){
 	return langValue[1];
 }
 
-function loadLanguage(currentPage, subdirectory){
+function loadLanguage(currentPage){
 	if(getLang() === "es"){
-		setLanguage(1, currentPage, subdirectory);
+		setLanguage(1, currentPage);
 	} else {
-		setLanguage(0, currentPage, subdirectory);
+		setLanguage(0, currentPage);
+	}
+}
+
+function loadLanguageGame(currentPage){
+	if(getLang() === "es"){
+		setLanguageGame(1, currentPage);
+	} else {
+		setLanguageGame(0, currentPage);
 	}
 }

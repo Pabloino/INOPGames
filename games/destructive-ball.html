@@ -14,8 +14,10 @@
 
 <body>
 	<script src="../data/lang/lang.js"></script>
+	<script src="../data/lang/lang_games.js"></script>
 	<script src="../data/js/loadLang.js"></script>
 	<script src="../data/js/setLang.js"></script>
+	<script src="../data/js/setLangGame.js"></script>
 	<script src="../data/js/goPage.js"></script>
 
 	<script src="../data/js/header.js"></script>
@@ -26,9 +28,9 @@
 		<div class='description-text'>
 			<h2>DESTRUCTIVE BALL</h2>
 
-			Destructive Ball es un juego del tipo breakout cuyo objetivo es destruir con la bola todos los ladrillos de cada nivel. Para ello debe dominar el control de la plataforma para atrapar la bola y esquivar ciertos obstáculos que pueden afectar su manejo. El juego cuenta con varios niveles de diferentes estilos agrupados en distintas zonas ofreciendo una experiencia más dinámica y atractiva.
+			<div id="game-description-txt"></div>
 			
-			<h3>Galería de imágenes</h3>
+			<h3 id="gallery-imgs-txt"></h3>
 
 			<div id="gallery">
     			<div class="slide">
@@ -51,20 +53,19 @@
     			</div>
 			</div>
 
-			<h3>Información del producto</h3>
+			<h3 id="product-info-txt"></h3>
 
 			<div class="description">
-				<div class="column"><b>Tamaño:</b> 20,7 Mb</div>
-				<div class="column"><b>Versión:</b> 1.06</div>
-				<div class="column"><b>Lanzamiento:</b> Junio 2010</div>
-				<div class="column"><b>Género:</b> Breakout</div>
-				<div class="column"><b>Idioma:</b> Inglés - Español</div>
-				<div class="column"><b>Plataforma:</b> Windows</div>
-				<div class="column"></div>
+				<div class="column" id="size-txt"></div>
+				<div class="column" id="version-txt"></div>
+				<div class="column" id="release-txt"></div>
+				<div class="column" id="genre-txt"></div>
+				<div class="column" id="lang-txt"></div>
+				<div class="column" id="platform-txt"></div>
 			</div>
 
 			<div class="download-container">
-				<a href="https://www.dropbox.com/s/pyo8xekxifoptk7/Destructive%20Ball.exe?dl=1" id="download"><div class='download-button'>DESCARGAR</div></a>
+				<a href="https://www.dropbox.com/s/pyo8xekxifoptk7/Destructive%20Ball.exe?dl=1" id="download"><div class='download-button' id="download-txt"></div></a>
 			</div>
 
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -90,7 +91,10 @@
 	</div>
 
 	<script src="../data/js/gallery_imgs.js"></script>
-	<script type="text/javascript">loadLanguage("games",true);</script>
+	<script type="text/javascript">
+		loadLanguage("destructive-ball");
+		loadLanguageGame("dball");
+	</script>
 	<script src="../data/js/responsive.js"></script>
 </body>
 

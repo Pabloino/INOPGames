@@ -1,17 +1,34 @@
 var lang_games_text = '{' + 
+' "catalog_list" : [' +
+        '[' +
+            '{ "catalog" : "XMAS DELIVERIES<br /><br />Version: 1.00<br />Release: 2015" },' +
+            '{ "catalog" : "XMAS DELIVERIES<br /><br />Versión: 1.00<br />Lanzamiento: 2015" }' +
+        '],' +
+        '[' +
+            '{ "catalog" : "DESTRUCTIVE BALL 2<br /><br />Version: 1.01<br />Release: 2011" },' +
+            '{ "catalog" : "DESTRUCTIVE BALL 2<br /><br />Versión: 1.01<br />Lanzamiento: 2011" }' +
+        '],' +
+        '[' +
+            '{ "catalog" : "BLOXES: IN THE TOWER<br /><br />Version: 1.00<br />Release: 2011" },' +
+            '{ "catalog" : "BLOXES: IN THE TOWER<br /><br />Versión: 1.00<br />Lanzamiento: 2011" }' +
+        '],' +
+        '[' +
+            '{ "catalog" : "DESTRUCTIVE BALL<br /><br />Version: 1.06<br />Release: 2010" },' +
+            '{ "catalog" : "DESTRUCTIVE BALL<br /><br />Versión: 1.06<br />Lanzamiento: 2010" }' +
+        ']' +
+    '],' +
 ' "titles" : [' +
 		'{' +
 			' "gallery" : "Image gallery", ' + 
-			' "product-info" : "Product information" ' + 
+			' "product_info" : "Product information" ' + 
 		'},' +
 		'{' +
             ' "gallery" : "Galería de imágenes", ' + 
-            ' "product-info" : "Información del producto" ' + 
+            ' "product_info" : "Información del producto" ' + 
 		'}' +
     '],' +
 ' "xmas" : [' +
         '{' +
-            ' "catalog" : "XMAS DELIVERIES<br /><br />Version: 1.00<br />Release: 2015", ' + 
             ' "version" : "<b>Version:</b> 1.00", ' + 
             ' "size" : "<b>Size:</b> 6,98 Mb", ' + 
             ' "release" : "<b>Release:</b> December 2015", ' + 
@@ -21,7 +38,6 @@ var lang_games_text = '{' +
             ' "info" : "Xmas Deliveries is a game similar to the classic Flappy Bird that consists of controlling a Christmas sleigh with Santa Claus in command who must fly over the city in full Christmas. The objective of the game is simple: to ensure that as many gifts as possible are provided through the chimneys and to maintain a stable rhythm by avoiding each of the roofs and buildings that represent an obstacle for the entire route, trying to reach as far as possible. Try to beat your record!" ' +
         '},' +
         '{' +
-            ' "catalog" : "XMAS DELIVERIES<br /><br />Version: 1.00<br />Lanzamiento: 2015", ' + 
             ' "version" : "<b>Versión:</b> 1.00", ' + 
             ' "size" : "<b>Tamaño:</b> 6,98 Mb", ' + 
             ' "release" : "<b>Lanzamiento:</b> Diciembre 2015", ' + 
@@ -31,9 +47,8 @@ var lang_games_text = '{' +
             ' "info" : "Xmas Deliveries es un juego similar al clásico Flappy Bird que consiste en controlar un trineo navideño con Santa Claus al mando que debe sobrevolar la ciudad en plena navidad. El objetivo del juego es simple: asegurar entregar la mayor cantidad de regalos posibles a través de las chimenéas y mantener un ritmo estable esquivando cada una de las azoteas y edificios que representan un obstáculo para todo el recorrido, tratando de alcanzar la mayor distancia posible. ¡Prueba batir tu record!" ' +
         '}' +
     '],' +
-' "dball-two" : [' +
+' "dball_two" : [' +
         '{' +
-            ' "catalog" : "DESTRUCTIVE BALL 2<br /><br />Version: 1.01<br />Release: 2011", ' + 
             ' "version" : "<b>Version:</b> 1.01", ' + 
             ' "size" : "<b>Size:</b> 34,1 Mb", ' + 
             ' "release" : "<b>Release:</b> August 2011", ' + 
@@ -43,7 +58,6 @@ var lang_games_text = '{' +
             ' "info" : "The sequel to the Destructive Ball is here, offering a completely new gameplay engine as well as new levels full of action, objects and graphic effects. Its mission is to control the platform to prevent the ball from leaving the area of the game and destroy all the bricks with the ball, even with the help of various objects that are detached when breaking the bricks. To do this you must master your skills with the handling of the platform and overcome any type of obstacle." ' +
         '},' +
         '{' +
-            ' "catalog" : "DESTRUCTIVE BALL 2<br /><br />Version: 1.01<br />Lanzamiento: 2011", ' + 
             ' "version" : "<b>Versión:</b> 1.01", ' + 
             ' "size" : "<b>Tamaño:</b> 34,1 Mb", ' + 
             ' "release" : "<b>Lanzamiento:</b> Agosto 2011", ' + 
@@ -55,7 +69,6 @@ var lang_games_text = '{' +
     '],' +
 ' "bloxes" : [' +
 		'{' +
-			' "catalog" : "BLOXES: IN THE TOWER<br /><br />Version: 1.00<br />Release: 2011", ' + 
 			' "version" : "<b>Version:</b> 1.00", ' + 
 			' "size" : "<b>Size:</b> 8,29 Mb", ' + 
 			' "release" : "<b>Release:</b> April 2011", ' + 
@@ -65,7 +78,6 @@ var lang_games_text = '{' +
 			' "info" : "A green box is trapped on top of a tower and needs your help to escape. Your mission is to guide the box to the exit of each room, but for this you must push other boxes and master the obstacles that prevent the passage to the goal. Do you want to solve all the puzzles?" ' +
 		'},' +
 		'{' +
-			' "catalog" : "BLOXES: IN THE TOWER<br /><br />Versión: 1.00<br />Lanzamiento: 2011", ' + 
 			' "version" : "<b>Versión:</b> 1.00", ' + 
 			' "size" : "<b>Tamaño:</b> 8,29 Mb", ' + 
 			' "release" : "<b>Lanzamiento:</b> Abril 2011", ' + 
@@ -77,7 +89,6 @@ var lang_games_text = '{' +
     '],' +
 ' "dball" : [' +
         '{' +
-            ' "catalog" : "DESTRUCTIVE BALL 2<br /><br />Version: 1.06<br />Release: 2010", ' + 
             ' "version" : "<b>Version:</b> 1.06", ' + 
             ' "size" : "<b>Size:</b> 20,7 Mb", ' + 
             ' "release" : "<b>Release:</b> June 2010", ' + 
@@ -87,7 +98,6 @@ var lang_games_text = '{' +
             ' "info" : "Destructive Ball is a breakout type game whose objective is to destroy all the bricks of each level with the ball. For this you must master the control of the platform to catch the ball and avoid certain obstacles that may affect its handling. The game has several levels of different styles grouped in different areas offering a more dynamic and attractive experience." ' +
         '},' +
         '{' +
-            ' "catalog" : "DESTRUCTIVE BALL<br /><br />Version: 1.06<br />Lanzamiento: 2010", ' + 
             ' "version" : "<b>Versión:</b> 1.06", ' + 
             ' "size" : "<b>Tamaño:</b> 20,7 Mb", ' + 
             ' "release" : "<b>Lanzamiento:</b> Junio 2010", ' + 

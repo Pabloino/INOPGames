@@ -1,12 +1,4 @@
-function setLanguage(lang_id, currentPage, subdirectory){
-	var cd = "";
-
-	if(subdirectory){
-		cd = "../"
-	}
-
-	cd += currentPage;
-
+function setLanguage(lang_id, currentPage){
 	var num = lang_id;
 
 	//Header
@@ -20,11 +12,11 @@ function setLanguage(lang_id, currentPage, subdirectory){
 		document.getElementById("lang").title = obj.header[num].langTitle;
 
 		if(num == 0){
-			document.getElementById("lang").setAttribute('href',"javascript:goPage('"+cd+".html','es')");
-			document.getElementById("lang_mobile").setAttribute('href',"javascript:goPage('"+cd+".html','es')");
+			document.getElementById("lang").setAttribute('href',"javascript:goPage('"+currentPage+".html','es')");
+			document.getElementById("lang_mobile").setAttribute('href',"javascript:goPage('"+currentPage+".html','es')");
 		} else {
-			document.getElementById("lang").setAttribute('href',"javascript:goPage('"+cd+".html','en')");
-			document.getElementById("lang_mobile").setAttribute('href',"javascript:goPage('"+cd+".html','en')");
+			document.getElementById("lang").setAttribute('href',"javascript:goPage('"+currentPage+".html','en')");
+			document.getElementById("lang_mobile").setAttribute('href',"javascript:goPage('"+currentPage+".html','en')");
 		}
 	}
 
@@ -40,7 +32,9 @@ function setLanguage(lang_id, currentPage, subdirectory){
 
 	//Games
 	if(currentPage === "games"){
-		
+		for(var i=0; i < document.getElementsByClassName("text").length; i++){
+			document.getElementsByClassName("text")[i].innerHTML = obj_game.catalog_list[i][num].catalog;
+		}
 	}
 
 	//Footer

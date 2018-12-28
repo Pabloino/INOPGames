@@ -14,8 +14,10 @@
 
 <body>
 	<script src="../data/lang/lang.js"></script>
+	<script src="../data/lang/lang_games.js"></script>
 	<script src="../data/js/loadLang.js"></script>
 	<script src="../data/js/setLang.js"></script>
+	<script src="../data/js/setLangGame.js"></script>
 	<script src="../data/js/goPage.js"></script>
 
 	<script src="../data/js/header.js"></script>
@@ -26,9 +28,9 @@
 		<div class='description-text'>
 			<h2>DESTRUCTIVE BALL 2</h2>
 
-			La secuela del Destructive Ball ya está aquí, ofreciendo un motor de jugabilidad completamente renovado además de contar con nuevos niveles llenos de acción, objetos y efectos gráficos. Su misión es controlar la plataforma para impedir que la bola salga de la zona del juego y destruir todos los ladrillos con la bola, incluso con la ayuda de diversos objetos que se van desprendiendo al romper los ladrillos. Para ello debes dominar tus habilidades con el manejo de la plataforma y superar cualquier tipo de obstáculo.
+			<div id="game-description-txt"></div>
 			
-			<h3>Galería de imágenes</h3>
+			<h3 id="gallery-imgs-txt"></h3>
 
 			<div id="gallery">
     			<div class="slide">
@@ -57,21 +59,19 @@
     			</div>
 			</div>
 
-
-			<h3>Información del producto</h3>
+			<h3 id="product-info-txt"></h3>
 
 			<div class="description">
-				<div class="column"><b>Tamaño:</b> 34,1 Mb</div>
-				<div class="column"><b>Versión:</b> 1.01</div>
-				<div class="column"><b>Lanzamiento:</b> Agosto 2011</div>
-				<div class="column"><b>Género:</b> Breakout</div>
-				<div class="column"><b>Idioma:</b> Inglés</div>
-				<div class="column"><b>Plataforma:</b> Windows</div>
-				<div class="column"></div>
+				<div class="column" id="size-txt"></div>
+				<div class="column" id="version-txt"></div>
+				<div class="column" id="release-txt"></div>
+				<div class="column" id="genre-txt"></div>
+				<div class="column" id="lang-txt"></div>
+				<div class="column" id="platform-txt"></div>
 			</div>
 
 			<div class="download-container">
-				<a href="https://www.dropbox.com/s/bxuss8tio4aj9eo/DBall2.exe?dl=1" id="download"><div class='download-button'>DESCARGAR</div></a>
+				<a href="https://www.dropbox.com/s/bxuss8tio4aj9eo/DBall2.exe?dl=1" id="download"><div class='download-button' id="download-txt"></div></a>
 			</div>
 
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -97,9 +97,11 @@
 	</div>
 
 	<script src="../data/js/gallery_imgs.js"></script>
-	<script type="text/javascript">loadLanguage("games",true);</script>
+	<script type="text/javascript">
+		loadLanguage("destructive-ball-2");
+		loadLanguageGame("dball_two");
+	</script>
 	<script src="../data/js/responsive.js"></script>
-
 </body>
 
 </html>

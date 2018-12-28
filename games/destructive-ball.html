@@ -16,6 +16,7 @@
 	<script src="../data/lang/lang.js"></script>
 	<script src="../data/lang/lang_games.js"></script>
 	<script src="../data/js/loadLang.js"></script>
+	<script src="../data/js/loadGamePage.js"></script>
 	<script src="../data/js/setLang.js"></script>
 	<script src="../data/js/setLangGame.js"></script>
 	<script src="../data/js/goPage.js"></script>
@@ -28,9 +29,7 @@
 		<div class='description-text'>
 			<h2>DESTRUCTIVE BALL</h2>
 
-			<div id="game-description-txt"></div>
-			
-			<h3 id="gallery-imgs-txt"></h3>
+			<script type="text/javascript">loadGamePageTitle();</script>
 
 			<div id="gallery">
     			<div class="slide">
@@ -53,34 +52,12 @@
     			</div>
 			</div>
 
-			<h3 id="product-info-txt"></h3>
-
-			<div class="description">
-				<div class="column" id="size-txt"></div>
-				<div class="column" id="version-txt"></div>
-				<div class="column" id="release-txt"></div>
-				<div class="column" id="genre-txt"></div>
-				<div class="column" id="lang-txt"></div>
-				<div class="column" id="platform-txt"></div>
-			</div>
-
-			<div class="download-container">
-				<a href="https://www.dropbox.com/s/pyo8xekxifoptk7/Destructive%20Ball.exe?dl=1" id="download"><div class='download-button' id="download-txt"></div></a>
-			</div>
+			<script type="text/javascript">
+				loadGamePageDescription("https://www.dropbox.com/s/pyo8xekxifoptk7/Destructive%20Ball.exe?dl=1");
+				loadModal();
+			</script>
 
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-			<!-- The Modal -->
-			<div id="myModal" class="modal">
-  				<!-- The Close Button -->
-  				<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-  				<!-- Modal Content (The Image) -->
-  				<img class="modal-content" id="img01">
-
-  				<!-- Modal Caption (Image Text) -->
-  				<div id="caption"></div>
-			</div>
-
 		</div>
 
 		<script src="../data/js/footer.js"></script>

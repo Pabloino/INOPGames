@@ -17,6 +17,28 @@
 	padding-right: 5vw;
 }
 
+.profile{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.photo{
+	background-image: url('../imgs/about-photo.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	height: 19vw;
+	margin: 0.5vw;
+	width: 60%;
+	border-radius: 15px;
+}
+
+.description{
+	margin-left: 1vw;
+	width: 100%;
+}
+
 @media screen and (max-width: 1024px) {
 
 	.main-content {top: 80px;}
@@ -27,6 +49,16 @@
 
 	.about-text{
 		font-size: 3vw;
+	}
+
+	.profile{
+		flex-direction: column;
+	}
+
+	.photo{
+		height: 50vw;
+		margin: 0.5vw;
+		width: 100%;
 	}
 }
 

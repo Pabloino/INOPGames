@@ -48,6 +48,12 @@ function setLanguage(lang_id, currentPage){
 		document.getElementById("about-txt-history").innerHTML = obj.about[num].ip_txt_history;
 	}
 
+	//Contact
+	if(currentPage === "contact"){
+		document.getElementById("title-contact").innerHTML = obj.contact[num].title_contact;
+		document.getElementById("contact-txt").innerHTML = obj.contact[num].contact_txt;
+	}
+
 	//Footer
 	document.getElementById("copyright-txt").innerHTML = obj.footer[num].copyright;
 	document.getElementById("copyright-txt-mob").innerHTML = obj.footer[num].copyright_mobile;

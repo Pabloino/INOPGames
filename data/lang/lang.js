@@ -90,6 +90,16 @@ var lang_text = '{' +
 			' "title_history" : "Un poco de historia", ' + 
 			' "ip_txt_history" : "Todo empezó a principios del 2007, en una tarde mientras estaba con un videojuego me surgió la pregunta sobre cómo se desarrollaría uno, allí comencé a investigar al respecto y a construir mi propia experiencia desarrollando parte de algunos juegos básicos como un pacman, un breakout, y entre otros, hasta que finalmente lancé el primer juego completo de estilo breakout llamado Destroyed Box (que años después fué sustituido por un remake que se lo llamó Destructive Ball). Luego procedí a ponerle un nombre indicativo al emprendimiento, donde en un principio se llamó Pablo-ino Software y más adelante pasó a llamarse INOPSoftware, hasta que finalmente se lo llamó INOPGames, tal como se lo conoce ahora.<br /><br />Con el paso del tiempo mi experiencia fue innovando, se desarrollaron nuevos tipos de juegos y se adaptaron nuevas tecnologías, tales como desarrollo de juegos en 3D y el paso hacia otros dispositivos." ' + 
 		'}' + 
+	'],' +
+' "contact" : [' +
+		'{' +
+			' "title_contact" : "Contact", ' + 
+			' "contact_txt" : "If you have any questions about INOPGames products, be it suggestions, questions or error reports, do not hesitate to contact us." ' + 
+		'},' +
+		'{' +
+			' "title_contact" : "Contacto", ' + 
+			' "contact_txt" : "Ante cualquier consulta acerca de los productos de INOPGames, ya sea sugerencias, dudas o reporte de errores, no dude en contactarse." ' + 
+		'}' + 
 	']' +
 '}';
 

@@ -37,6 +37,17 @@ function setLanguage(lang_id, currentPage){
 		}
 	}
 
+	//About
+	if(currentPage === "about"){
+		document.getElementById("about-title").innerHTML = obj.about[num].title_about;
+		document.getElementById("about-txt-header").innerHTML = obj.about[num].ip_txt_header;
+		document.getElementById("about-title-perspective").innerHTML = obj.about[num].title_perspective;
+		document.getElementById("about-txt-profileA").innerHTML = obj.about[num].ip_txt_profileA;
+		document.getElementById("about-txt-profileB").innerHTML = obj.about[num].ip_txt_profileB;
+		document.getElementById("about-title-history").innerHTML = obj.about[num].title_history;
+		document.getElementById("about-txt-history").innerHTML = obj.about[num].ip_txt_history;
+	}
+
 	//Footer
 	document.getElementById("copyright-txt").innerHTML = obj.footer[num].copyright;
 	document.getElementById("copyright-txt-mob").innerHTML = obj.footer[num].copyright_mobile;

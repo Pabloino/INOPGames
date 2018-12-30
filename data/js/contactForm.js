@@ -1,6 +1,7 @@
 function contactForm(lang){
-    var form = document.createElement("script defer");
+    var form = document.createElement("script");
     form.setAttribute("type","text/javascript");
+    form.setAttribute("defer","");
     form.setAttribute("data-role","form");
     form.setAttribute("data-default-width","650px");
 

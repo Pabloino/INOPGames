@@ -104,10 +104,12 @@ var lang_text = '{' +
 ' "news" : [' +
 		'{' +
 			' "title_latest_news" : "LATEST NEWS", ' +
+			' "read_more" : "Read more...", ' +
 			' "title_news" : "News blog" ' +
 		'},' +
 		'{' +
 			' "title_latest_news" : "ÚLTIMAS NOTICIAS", ' +
+			' "read_more" : "Leer más...", ' +
 			' "title_news" : "Blog de noticias" ' + 
 		'}' + 
 	']' +

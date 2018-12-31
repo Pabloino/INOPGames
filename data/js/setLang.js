@@ -29,6 +29,16 @@ function setLanguage(lang_id, currentPage){
 		document.getElementById("button-slide2").innerHTML = obj.buttons[num].read_button;
 		document.getElementById("button-slide3").innerHTML = obj.buttons[num].read_button;
 		document.getElementById("latest-news-title").innerHTML = obj.news[num].title_latest_news;
+		
+		for(var i=0; i < 3; i++){
+			var id_txt = "post-"+(i+1)+"-title";
+			document.getElementById(id_txt).innerHTML = obj_news.news_list[i][num].title;
+			id_txt = "post-"+(i+1)+"-txt";
+			document.getElementById(id_txt).innerHTML = obj_news.news_list[i][num].text;
+
+			document.getElementsByClassName("read-more-txt")[i].innerHTML = obj.news[num].read_more;
+		}
+		
 		document.getElementById("news-button-id").innerHTML = obj.buttons[num].news_button;
 	}
 

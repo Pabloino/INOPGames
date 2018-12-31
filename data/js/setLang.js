@@ -28,6 +28,8 @@ function setLanguage(lang_id, currentPage){
 		document.getElementById("button-slide1").innerHTML = obj.buttons[num].read_button;
 		document.getElementById("button-slide2").innerHTML = obj.buttons[num].read_button;
 		document.getElementById("button-slide3").innerHTML = obj.buttons[num].read_button;
+		document.getElementById("latest-news-title").innerHTML = obj.news[num].title_latest_news;
+		document.getElementById("news-button-id").innerHTML = obj.buttons[num].news_button;
 	}
 
 	//Games
@@ -35,6 +37,11 @@ function setLanguage(lang_id, currentPage){
 		for(var i=0; i < document.getElementsByClassName("text").length; i++){
 			document.getElementsByClassName("text")[i].innerHTML = obj_game.catalog_list[i][num].catalog;
 		}
+	}
+
+	//News
+	if(currentPage === "news"){
+		document.getElementById("news-title").innerHTML = obj.news[num].title_news;
 	}
 
 	//About

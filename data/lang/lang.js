@@ -100,6 +100,16 @@ var lang_text = '{' +
 			' "title_contact" : "Contacto", ' + 
 			' "contact_txt" : "Ante cualquier consulta acerca de los productos de INOPGames, ya sea sugerencias, dudas o reporte de errores, no dude en contactarse." ' + 
 		'}' + 
+	'],' +
+' "news" : [' +
+		'{' +
+			' "title_latest_news" : "LATEST NEWS", ' +
+			' "title_news" : "News blog" ' +
+		'},' +
+		'{' +
+			' "title_latest_news" : "ÚLTIMAS NOTICIAS", ' +
+			' "title_news" : "Blog de noticias" ' + 
+		'}' + 
 	']' +
 '}';
 

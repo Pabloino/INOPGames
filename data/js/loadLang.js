@@ -24,3 +24,11 @@ function loadLanguageGame(currentPage){
 		setLanguageGame(0, currentPage);
 	}
 }
+
+function loadLanguageNews(){
+	if(getLang() === "es"){
+		loadNewsList(1);
+	} else {
+		loadNewsList(0);
+	}
+}

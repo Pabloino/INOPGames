@@ -19,9 +19,30 @@ div.gallery img {
     flex-wrap: wrap;
 }
 
+.video-container {
+	position:relative;
+	padding-bottom:30.25%;
+	padding-top:30px;
+    overflow:hidden;
+    width:50%;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
 @media only screen and (max-width: 767px) {
     div.gallery {
         flex-basis: 33.33333%;
+    }
+
+    .video-container {
+        padding-bottom:56.25%;
+        width:100%;
     }
 }
 

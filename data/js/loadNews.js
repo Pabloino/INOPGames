@@ -9,7 +9,7 @@ function loadNewsList(lang_id){
         var text = document.createElement("div");
         var link = document.createElement("a");
 
-        link.setAttribute("href","javascript:goPageNews(getLang(),"+i+")");
+        link.setAttribute("href","javascript:goPageNews("+i+",getLang())");
 
         puntos = "";
         if(obj_news.news_list[i][num].text.length > stringLimit){

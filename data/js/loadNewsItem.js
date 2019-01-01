@@ -1,4 +1,4 @@
-function setNewsItem(lang_id, news_id){
+function setNewsItem(news_id, lang_id){
     var num = lang_id;
 
     document.getElementById("news-item-title").innerHTML = obj_news.news_list[news_id][num].title;
@@ -7,9 +7,9 @@ function setNewsItem(lang_id, news_id){
 
 function loadNewsItem(news_id){
     if(getLang() === "es"){
-		setNewsItem(1, news_id);
+		setNewsItem(news_id, 1);
 	} else {
-		setNewsItem(0, news_id);
+		setNewsItem(news_id, 0);
 	}
 }
 

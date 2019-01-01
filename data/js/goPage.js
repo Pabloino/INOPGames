@@ -1,9 +1,14 @@
 function goPage(page, language){
-	page += "?locale=" + language;
-	location.href = page;
+	var pageDestination = page + "?locale=" + language;
+
+	if(page === "item.html"){
+		pageDestination += "&news=" + getNews();
+	}
+
+	location.href = pageDestination;
 }
 
-function goPageNews(language, news_id){
+function goPageNews(news_id, language){
 	page = "item.html";
 	page += "?locale=" + language + "&news=" + news_id;
 	location.href = page;

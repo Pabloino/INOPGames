@@ -33,7 +33,7 @@ var lang_news_text = '{' +
                             "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox3.png'><img src='data/news/imgs/dbox3.png'></a></div>"+
                             "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox4.png'><img src='data/news/imgs/dbox4.png'></a></div>"+
                             "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox5.png'><img src='data/news/imgs/dbox5.png'></a></div>"+
-                            "</div><br /> El juego contaba con una jugabilidad escasa debido al poco conocimiento que poseía en aquel momento, pero sirvió de experiencia para seguir adelante y desarrollar mejores productos." + '" ' +
+                            "</div><br /> El juego contaba con una jugabilidad escasa debido al poco conocimiento que poseía en aquel momento, pero sirvió de experiencia para seguir adelante y desarrollar mejores productos. De esta forma, años después, se hizo un remake completo de este juego y se lo llamó <a href=javascript:goPage(\'games/destructive-ball.html\',\'es\')>Destructive Ball</a>, sutituyendo por completo al Destroyed Box. Con Destructive Ball se mejoró la jugabilidad corrigiendo los defectos que poseía Destroyed Box. Más adelante se continuó innovando con el desarrollo de nuevos juegos, como el <a href=javascript:goPage(\'games/bloxes-in-the-tower.html\',\'es\')>Bloxes: In The Tower</a> y <a href=javascript:goPage(\'games/destructive-ball-2.html\',\'es\')>Destructive Ball 2</a>, que representaron un gran avance en el desarrollo de mi experiencia.<br /><br />Hoy en día continuamos innovando y avanzando con futuros proyectos. ¡Vamos por más!" + '" ' +
             '}' +
         '],' +
         '[' +
@@ -42,8 +42,8 @@ var lang_news_text = '{' +
                 ' "text" : "Product information" ' + 
             '},' +
             '{' +
-                ' "title" : "Título 4", ' + 
-                ' "text" : "Información del producto" ' + 
+                ' "title" : "[25-12-2015] Lanzamiento de Xmas Deliveries", ' + 
+                ' "text" : "Para estas navidades decidimos desarrollar un juego navideño. El juego está basado en el clásico Flappy Bird que consiste en controlar un trineo navideño con Santa Claus al mando que debe sobrevolar la ciudad en plena navidad. El objetivo es entregar la mayor cantidad de regalos posibles a través de las chimeneas y mantener un ritmo estable esquivando cada una de las azoteas y edificios que representan un obstáculo para todo el recorrido, tratando de alcanzar la mayor distancia posible.<br /><br /><b>Trailer del juego:</b><br /><br /><iframe width=\'400\' height=\'285\' src=\'https://www.youtube.com/embed/jUydUKzk2bM\' frameborder=\'0\' allow=\'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe><br /><br />Para más información sobre el juego, puede consultarlo en el catálogo: <a href=javascript:goPage(\'games/xmas-deliveries.html\',\'es\')>Xmas Deliveries</a>." ' + 
             '}' +
         ']' +
     ']' +

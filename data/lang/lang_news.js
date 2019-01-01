@@ -2,8 +2,8 @@ var lang_news_text = '{' +
 ' "news_list" : [' +
         '[' +
             '{' +
-                ' "title" : "Title 1", ' + 
-                ' "text" : "Product information" ' + 
+                ' "title" : "[01-01-2019]: The new website is released!", ' + 
+                ' "text" : "We started the new year by launching the new INOPGames website, which i has been working for months.<br /><br />The website has been completely redesigned, offering a renewed and simplified design that allows a better ease of use for all users. It also has the optimization for mobile devices, offering the possibility of navigating from anywhere.<br /><br />Among other features, the game catalog has been completely renewed along with the detailed information of each one and the multi-language support (Spanish and English) was provided with a system that allows switching between both languages without having to reload the whole page.<br /><br />Enjoy it and happy 2019!" ' + 
             '},' +
             '{' +
                 ' "title" : "[01-01-2019]: Lanzamiento de la nueva página web", ' + 
@@ -12,8 +12,8 @@ var lang_news_text = '{' +
         '],' +
         '[' +
             '{' +
-                ' "title" : "Estrenando el motor Unity", ' + 
-                ' "text" : "Product information" ' + 
+                ' "title" : "[11-07-2017]: Premiering the Unity engine", ' + 
+                ' "text" : "As some time ago we have been planning to make the leap to 3D games, for this I am opting for the Unity engine for future releases. This engine will offer a wide variety of tools that will allow us to develop higher quality games and with graphical improvements.<br /><br />Any news about a project on the way, we will keep you updated!" ' + 
             '},' +
             '{' +
                 ' "title" : "[11-07-2017]: Estrenando el motor Unity", ' + 
@@ -22,8 +22,14 @@ var lang_news_text = '{' +
         '],' +
         '[' +
             '{' +
-                ' "title" : "Title 3", ' + 
-                ' "text" : "Product information" ' + 
+                ' "title" : "[17-04-2017]: ¡INOPGames celebrates 10 years!", ' + 
+                ' "text" : "Exactly 10 years ago, on a day like today, i had the question on how to develop a video game that led me to put together this project and carry out all this way. A lot has happened in these 10 years, a decade of a lot of innovation, learning and development of new products.<br /><br /><b>The history of the first release:</b><br /><br />After investigating and acquiring the first knowledge, 10 years ago I proceeded to develop the first game called Destroyed Box, a breakout style game that provided approximately 30 levels. Next I will reveal some images that I had very saved about this game:<br /><br />'+
+                            "<div class='box_content'><div class='gallery'><a target='_blank' href='data/news/imgs/dbox1.png'><img src='data/news/imgs/dbox1.png'></a></div>"+
+                            "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox2.png'><img src='data/news/imgs/dbox2.png'></a></div>"+
+                            "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox3.png'><img src='data/news/imgs/dbox3.png'></a></div>"+
+                            "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox4.png'><img src='data/news/imgs/dbox4.png'></a></div>"+
+                            "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox5.png'><img src='data/news/imgs/dbox5.png'></a></div>"+
+                            "</div><br /> The game had little gameplay due to the little knowledge that it had at that time, but it served as an experience to move forward and develop better products. In this way, years later, a complete remake of this game was made and it was called <a href=javascript:goPage(\'games/destructive-ball.html\',\'en\')>Destructive Ball</a>, completely replacing the Destroyed Box. With Destructive Ball the gameplay was improved correcting the defects that Destroyed Box possessed. Later on, innovation continued with the development of new games, such as the <a href=javascript:goPage(\'games/bloxes-in-the-tower.html\',\'en\')>Bloxes: In The Tower</a> and <a href=javascript:goPage(\'games/destructive-ball-2.html\',\'en\')>Destructive Ball 2</a>, which represented a breakthrough in the development of my experience.<br /><br />Today we continue to innovate and move forward with future projects. Let's go for more!" + '" ' +
             '},' +
             '{' +
                 ' "title" : "[17-04-2017]: ¡INOPGames cumple 10 años!", ' + 
@@ -38,8 +44,8 @@ var lang_news_text = '{' +
         '],' +
         '[' +
             '{' +
-                ' "title" : "Title 4", ' + 
-                ' "text" : "Product information" ' + 
+                ' "title" : "[25-12-2015] Launch of Xmas Deliveries", ' + 
+                ' "text" : "For this Christmas we decided to develop a Christmas game. The game is based on the classic Flappy Bird that consists of controlling a christmas sleigh with Santa Claus in command who must fly over the city in full Christmas. The objective is to deliver as many gifts as possible through the chimneys and to maintain a stable rhythm by avoiding each of the roofs and buildings that represent an obstacle for the entire route, trying to reach as far as possible.<br /><br /><b>Game trailer:</b><br /><br /><div class=\'video-container\'><iframe src=\'https://www.youtube.com/embed/jUydUKzk2bM\' frameborder=\'0\' allow=\'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe></div><br />For more information about the game, you can consult it in the catalog: <a href=javascript:goPage(\'games/xmas-deliveries.html\',\'en\')>Xmas Deliveries</a>." ' + 
             '},' +
             '{' +
                 ' "title" : "[25-12-2015] Lanzamiento de Xmas Deliveries", ' + 

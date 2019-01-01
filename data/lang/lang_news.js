@@ -27,12 +27,13 @@ var lang_news_text = '{' +
             '},' +
             '{' +
                 ' "title" : "[17-04-2017]: ¡INOPGames cumple 10 años!", ' + 
-                ' "text" : "Hace exactamente 10 años, en un día como hoy, me había surgido la pregunta sobre cómo desarrollar un videojuego que me llevó a armar este proyecto y realizar todo este camino. Han pasado muchas cosas dentro de estos 10 años, una década de mucha innovación, aprendizaje y desarrollo de nuevos productos.<br /><br /><b>La historia del primer lanzamiento:</b><br /><br />Luego de investigar y adquirir los primeros conocimientos, hace 10 años procedí a desarrollar el primer juego llamado Destroyed Box, un juego al estilo breakout que proporcionaba aproximadamente unos 30 niveles. A continuación voy a revelar algunas imágenes que tenía muy guardadas sobre este juego:<br />'+
-                            "<div class='responsive'><div class='gallery'><a target='_blank' href='data/news/imgs/dbox1.png'><img src='data/news/imgs/dbox1.png' width='20%' height='20%'></a></div></div>"+
-                            "<div class='responsive'><div class='gallery'><a target='_blank' href='data/news/imgs/dbox2.png'><img src='data/news/imgs/dbox2.png' width='20%' height='20%'></a></div></div>"+
-                            "<div class='responsive'><div class='gallery'><a target='_blank' href='data/news/imgs/dbox3.png'><img src='data/news/imgs/dbox3.png' width='20%' height='20%'></a></div></div>"+
-                            "<div class='responsive'><div class='gallery'><a target='_blank' href='data/news/imgs/dbox4.png'><img src='data/news/imgs/dbox4.png' width='20%' height='20%'></a></div></div>"+
-                            "<div class='responsive'><div class='gallery'><a target='_blank' href='data/news/imgs/dbox5.png'><img src='data/news/imgs/dbox5.png' width='20%' height='20%'></a></div></div>"+'" ' + 
+                ' "text" : "Hace exactamente 10 años, en un día como hoy, me había surgido la pregunta sobre cómo desarrollar un videojuego que me llevó a armar este proyecto y realizar todo este camino. Han pasado muchas cosas dentro de estos 10 años, una década de mucha innovación, aprendizaje y desarrollo de nuevos productos.<br /><br /><b>La historia del primer lanzamiento:</b><br /><br />Luego de investigar y adquirir los primeros conocimientos, hace 10 años procedí a desarrollar el primer juego llamado Destroyed Box, un juego al estilo breakout que proporcionaba aproximadamente unos 30 niveles. A continuación voy a revelar algunas imágenes que tenía muy guardadas sobre este juego:<br /><br />'+
+                            "<div class='box_content'><div class='gallery'><a target='_blank' href='data/news/imgs/dbox1.png'><img src='data/news/imgs/dbox1.png'></a></div>"+
+                            "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox2.png'><img src='data/news/imgs/dbox2.png'></a></div>"+
+                            "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox3.png'><img src='data/news/imgs/dbox3.png'></a></div>"+
+                            "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox4.png'><img src='data/news/imgs/dbox4.png'></a></div>"+
+                            "<div class='gallery'><a target='_blank' href='data/news/imgs/dbox5.png'><img src='data/news/imgs/dbox5.png'></a></div>"+
+                            "</div><br /> El juego contaba con una jugabilidad escasa debido al poco conocimiento que poseía en aquel momento, pero sirvió de experiencia para seguir adelante y desarrollar mejores productos." + '" ' +
             '}' +
         '],' +
         '[' +

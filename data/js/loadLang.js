@@ -1,6 +1,7 @@
 function getLang(){
 	var parameters = location.search.substring(1);
-	var langValue = parameters.split("=");
+	var langValue = parameters.split("&");
+	langValue = langValue[0].split("=");
 
 	if(typeof langValue[1] === "undefined"){
 		langValue[1] = "en";
@@ -31,4 +32,8 @@ function loadLanguageNews(){
 	} else {
 		loadNewsList(0);
 	}
+}
+
+function getStringLimit(){
+	return 300;
 }

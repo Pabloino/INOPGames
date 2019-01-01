@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head> 
+	<script src="data/js/loadHead.js"></script>
+	<script src="data/js/loadBase.js"></script>
+	<script type="text/javascript">
+		loadBase(false);
+		loadHead(false);
+	</script>
+    <link href='data/css/generateGallery.css' rel='stylesheet'/>
+    <link href='data/css/about.css' rel='stylesheet'/>
+</head>
+
+<body>
+	<script src="data/lang/lang.js"></script>
+	<script src="data/lang/lang_news.js"></script>
+	<script src="data/js/loadLang.js"></script>
+	<script src="data/js/setLang.js"></script>
+    <script src="data/js/goPage.js"></script>
+    <script src="data/js/loadNewsItem.js"></script>
+
+	<script src="data/js/header.js"></script>
+	<script type="text/javascript">header("", false);</script>
+
+	<div class='main-content'>
+
+        <div class='about-text'>
+            <h2 id="news-item-title"></h2>
+            <div id="news-item-txt"></div>
+        </div>
+
+        <script>loadNewsItem(getNews());</script>
+
+		<script src="data/js/footer.js"></script>
+		<script type="text/javascript">
+			footerMobile("main-content",false,false);
+			footer("main-content",false,false);
+		</script>
+	</div>
+
+	<script src="data/js/showslide.js"></script>
+    <script type="text/javascript">loadLanguage("item");</script>
+
+</body>
+
+</html>

@@ -30,7 +30,7 @@ function setLanguage(lang_id, currentPage){
 		document.getElementById("button-slide3").innerHTML = obj.buttons[num].read_button;
 		document.getElementById("latest-news-title").innerHTML = obj.news[num].title_latest_news;
 
-		var stringLimit = 300;
+		var stringLimit = getStringLimit();
 		var puntos = "";
 		
 		for(var i=0; i < 3; i++){
